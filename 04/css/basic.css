@@ -1,0 +1,213 @@
+html, body, header, footer,
+ul, li, p, span, b, strong, ins, sub, sup,
+h1, h2, h3, h4, h5, h6,
+a, button, input, form, section, figure {margin: 0; padding: 0;}
+a, button, input, form, fieldset {border: 0; outline: none; background: transparent;text-decoration: none;}
+button, input, form, fieldset {font-family: 'NanumSquare', 'sans-serif';}
+ul, li{list-style: none;}
+body {
+    font-family: 'NanumSquare', 'sans-serif';
+    font-weight: normal;
+    font-size: 16px;
+    background: black;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera*/
+    }
+
+/* 헤더 HEADER */
+.head {
+    width: 1500px; height: 100px;
+    margin: 0 auto;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    opacity: 1;
+    font-size: 17px;
+    transition: top 0.5s ease-in-out, opacity 0.6s ease;
+}
+.header-up {opacity: 0; top: -100px;}
+.nav {width: calc(100% - 300px); height: 100px; top: 0; float: right;}
+.nav ul {width: 100%; margin: 30px auto 0;}
+.nav ul li {width: 16.666%; text-align: center; float: left;}
+.nav ul li a {color: white; text-decoration: none;}
+.nav ul li span+span {display: none;}
+.nav ul li:hover span+span {display: block; color: #aaa}
+.logo {height: 80px; width: 200px; float: left; margin: 5px auto; background: url('../img/logo_ex.png') no-repeat center;}
+/* 헤더 HEADER 끝// */
+
+.game {display: block; margin: 0 auto; margin-top: 0; height: 100vh; width: 1500px;}
+.inner {height: 750px; background: grey;}
+
+/* 푸터 FOOTER */
+.foot {
+    width: 1500px; height: 70px; margin: 0 auto;
+    z-index: 9999; font-size: 0;
+}
+.foot .col1 {
+    display: inline-block;
+    width: 80%;
+    height: 100%;
+    text-align: left;
+}
+.foot .col1 span {
+    color: #aaa;
+    font-size: 14px;
+    position: relative;
+}
+.foot .col1 span:after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 1em;
+    background-color: #5f5f5f;
+    position: absolute;
+    right: -15px;
+    top: 0px;
+}
+.foot .col1 a {
+    color: #aaa;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 30px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.foot .col2 {
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    text-align: right;
+}
+input.sub {
+    color: white;
+    font-size: 14px;
+    width: 100px;
+    height: 2.2em;
+    background: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    line-height: 2.2;
+}
+    /* 구독 폼 */
+.subscribe {
+    width: 410px;
+    height: 310px;
+    text-align: center;
+    position: fixed;
+    right: calc(50vw - 750px);
+    bottom: -320px;
+    z-index: 10000;
+    background: black;
+    border: 1px solid white;
+    border-radius: 5px 5px 0px 0px;
+}
+.closeX {
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 18px;
+    height: 18px;
+}
+.closeX span {
+    display: block;
+    width: 20px;
+    height: 4px;
+    background: white;
+    
+    -webkit-transform: rotate(-45deg) translate(-5px, 4px);
+    transform: rotate(-45deg) translate(-5px, 4px);
+}
+.closeX span+span {
+    -webkit-transform: rotate(45deg) translate(1px, 2px);
+    transform: rotate(45deg) translate(1px, 2px);
+}
+
+.subscribe .form {
+    width: 90%;
+    height: 80%;
+    margin: 50px auto 0;
+    font-size: 16px;
+    color: white;
+}
+.subscribe .form .formTit {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.subscribe .form label {
+    display: block;
+    color: #ddd;
+    margin-top: 12px;
+    line-height: 1.3;
+}
+.howtosubscribe {
+    text-align: left;
+    font-weight: normal;
+}
+.howtosubscribe span {
+    display: block;
+    margin-top: 8px;
+}
+.form input[type=email] {
+    font-size: 16px;
+    color: black;
+    
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 7px 10px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background: white;
+    margin-top: 20px;
+}
+.form input[type=submit] {
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    line-height: 1;
+    
+    width: 150px;
+    height: 2.5em;
+    padding: 12px;
+    background: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 20px auto 0;
+}
+
+/* 푸터 FOOTER 끝// */
+
+
+@media all and (min-width: 1202px) and (max-width: 1499px){
+    /* 헤더 HEADER, 푸터 FOOTER */
+    .head {width: 1200px;}
+    
+    .foot {width: 1200px;}
+    .subscribe {
+        right: calc(50vw - 600px);
+    }
+    /* 헤더 HEADER, 푸터 FOOTER 끝//  */
+}
+
+
+@media all and (min-width: 902px) and (max-width: 1201px){
+    /* 헤더 HEADER, 푸터 FOOTER */
+    .head {width: 900px;}
+    
+    .foot {width: 900px;}
+    .subscribe {
+        right: calc(50vw - 450px);
+    }
+    /* 헤더 HEADER, 푸터 FOOTER 끝//  */
+}
+
+
+/*--- mobile 모바일, tablet 태블릿 ---*/
+@media all and (max-width: 901px){
+    
+}
+         

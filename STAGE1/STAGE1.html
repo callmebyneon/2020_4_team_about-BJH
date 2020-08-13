@@ -1,0 +1,99 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../common/img/favicon_32x32.png" type="image/x-icon"/>
+	<link rel="icon" href="../common/img/favicon_32x32.png" type="image/x-icon">
+    <title>ABOUT_______</title>
+    <script type="text/javascript" src="js/phaser.min.js"></script>
+    <script type="text/javascript" src="js/game.js"></script>
+    <link rel="stylesheet" href="../common/css/basic.css">
+    <link rel="stylesheet" href="css/game.css">
+    <script type="text/javascript" src="../common/js/jquery-3.4.1.min.js"></script>
+
+    <!--키 감지 & 플레이-->
+    <script type="text/javascript" src="js/sound.js"></script>
+    <script type="text/javascript" src="js/bgm.js"></script>
+
+   
+    <script>
+//------헤더,푸터 로드-----//
+        $(function() {
+            $("header").load("../common/head.html");
+            $("footer").load("../common/foot.html");
+        
+            $(document).keydown(function(event){
+                // ++ 게임할 때 키보드로 스크롤 제어 중지
+               if(event.keyCode >= 32 && event.keyCode <= 40){
+                  event.preventDefault();
+                }
+            });
+        });
+    </script>
+    
+</head>
+
+<body>
+    <header></header>
+
+    <!-- 모바일 화면 -->
+    <div class="mobile-index-wrap">
+        <div class="m-video"></div>
+        <p class="exception">게임을 시작하려면 브라우저 창을 키워주세요.<br>모바일에서 접속했다면 PC 환경으로 접속해주세요.</p>
+    </div>
+    
+    <div class="container">
+        <div id="game">
+            <!-- 배경음-->
+            <input type="checkbox" id="onoff" class="onoff" name="b1" onchange="myfunction(this);">
+            <label for="onoff"></label>
+
+            <div class="howtoplay">방향키로 이동하며<br><span class="POINT02">A로 총을쏘세요!</span></div>
+            <div class="enter"><span class="POINT01">ENTER</span> GAME START!</div>
+        
+
+			<!-- start -->
+			<div class="alert start-message">
+				<span class="message">STAGE 1</span><span style="font-size: 20px;">START</span>
+				<span class="guide-message">SPACE 눌러 게임을 시작하세요.</span>
+			</div>
+
+			<!-- end -->
+			<div class="alert end-message">
+				<span class="message replay">GAME OVER! TRY AGAIN!</span>
+				<span class="guide-message">F5를 눌러 게임을 처음부터 다시 시작하세요.</span>
+			</div>
+
+			<!-- clear -->
+			<div class="alert clear-message">
+				<span class="message clear">GAME CLEAR!</span>
+				<span class="guide-message">버튼을 누르면 다음 스케이지로 이동합니다.</span>
+				<span class="guide-message">다시 시작하려면 F5를 눌러주세요.</span>
+				<a class="next-stage" href="../STAGE2/STAGE2.html">NEXT STAGE</a>
+			</div>
+    </div>
+<!--
+        <audio id="keymovesound">
+            <source src="soundfx/untitled.mp3" type="audio/mp3">
+
+        </audio>
+        <audio id="start">start
+            <source src="soundfx/start.mp3" type="audio/mp3">
+
+        </audio>
+        <audio id="gameover">
+            <source src="soundfx/game_over2.mp3" type="audio/mp3">
+
+        </audio>
+
+        <audio id="success">
+                     
+            <source src="soundfx/success.mp3" type="audio/mp3">
+
+        </audio>
+-->
+    </div>
+
+    <footer></footer>
+</body></html>

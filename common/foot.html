@@ -1,0 +1,50 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+<div class="foot">
+   <div class="subscribe">
+       <a class="closeX" onclick="$(this).parent().stop().animate({'bottom': -320});"><span></span><span></span></a>
+       <div class="form">
+           <form>
+               <p class="formTit">이메일로 소식 받아보기</p>
+               <label class="howtosubscribe" for="email">이메일 레터를 구독하시면 새로운 소식을 알려드립니다.<span>아래 입력창에 레터를 구독받을 이메일 주소를 입력해서 구독신청을 해주세요.</span></label>
+               <input type="email" id="email" placeholder="이메일 주소를 입력하세요.">
+               <input type="submit" value="신청하기">
+           </form>
+       </div>
+   </div>
+   <div class="col1">
+       <span>본 웹사이트 내용은 사전고지 없이 변경될 수 있습니다.</span>
+       <a href="../06/aboutus.html">ABOUT US</a>
+   </div>
+   <div class="col2">
+       <input class="sub" type="button" value="구독하기">
+   </div>
+</div>
+<div class="navigator">
+    <a class="page-top"><i class="fas fa-angle-double-up up"></i></a>
+    <a class="page-end" ><i class="fas fa-angle-double-down down"></i></a>
+</div>
+
+<script>
+var subscribe = $('.subscribe');
+var isShowSub = false;
+$('input.sub').click(function(){
+    subscribe.stop().animate({'bottom': -1});
+});
+
+$(window).scroll(function(){
+    var sct = $(this).scrollTop();
+    if(sct > 500){
+        $(".navigator").fadeIn(500).css({'z-index':9999});
+    } else {
+        $(".navigator").fadeOut(500);
+    }
+});
+    
+$(".navigator .page-top").click(function(){
+    $("html, body").animate({scrollTop: 0});
+});
+$(".navigator .page-end").click(function(){
+    var end = $(document).height() - $(window).height();
+    $("html, body").animate({scrollTop: end});
+});
+</script>

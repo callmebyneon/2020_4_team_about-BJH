@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon_32x32.png" type="image/x-icon" />
+    <link rel="icon" href="img/favicon_32x32.png" type="image/x-icon">
+    <title>ABOUT_______</title>
+    <!--    공용css-->
+    <link rel="stylesheet" href="../common/css/basic.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/movie.css">
+
+    <!--    wow-->
+    <link rel="stylesheet" href="css/animate.css">
+    <!--    js-->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <!--    wowjs-->
+    <script src="js/wow.min.js"></script>
+    <script>
+        $(function() {
+            $("header").load("../common/head.html");
+            $("footer").load("../common/foot.html");
+        });
+    </script>
+    <script>
+        new WOW().init();
+    </script>
+
+
+    <script>
+        $(function() {
+            $(".hc_big_img").hide();
+            $(".hc_big_img").eq(0).fadeIn();
+            $(".hc_thumb_box").eq(0).addClass("hover");
+
+            $(".movie .movie_detail").hide();
+            $(".movie .movie_detail").eq(0).fadeIn();
+
+            $(".hc_thumb_box").click(function() {
+                var i = $(this).index();
+                $(".hc_thumb_box").removeClass("hover");
+                $(".hc_thumb_box").eq(i).addClass("hover");
+                $(".hc_big_img").hide();
+                $(".hc_big_img").eq(i).fadeIn();
+
+                $(".movie .movie_detail").hide();
+                $(".movie .movie_detail").eq(i).fadeIn(); //stop().slideToggle(1000);
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <header></header>
+
+    <!-- 내용 넣기 예시-->
+    <div class="content wow fadeInUp">
+        <h3 class="page-tit">COMMUNITY</h3>
+        <h4 class="page-sub">커뮤니티</h4>
+    </div>
+
+    <!--     video 모달-->
+    <div class="main_area main_hot_clip wow fadeInUp" data-wow-duration=".8s" data-wow-delay=".8s">
+        <div class="hc_movie vod_active">
+            <!--동영상 활성시 vod_active 추가-->
+            <div>
+                <div class="hc_big_img hover">
+                    <div class="hc_img_box ">
+                        <img src="img/gi.jpg" alt="기생충" class="img01"></div>
+                    <div class="hc_title_box">
+                        <div class="vod_box">
+                            <input type="checkbox" id="popup">
+                            <label for="popup"><img src="img/play0.png" alt="" style="width: 70px"></label>
+                            <div>
+                                <div>
+                                    <iframe width="700" height="400" src="https://www.youtube.com/embed/jBdRhhSt3Bc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <label for="popup"></label>
+                                </div>
+                                <label for="popup">X</label>
+                            </div>
+                        </div>
+                        <div class="txt_box">
+                            <div class="title">기생충</div>
+                            <div class="info_txt">화제의 봉준호영화 예고편</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hc_big_img hover">
+                    <div class="hc_img_box">
+                        <img src="img/snow.jpg" alt="설국열차" class="img02"></div>
+                    <div class="hc_title_box">
+                        <div class="vod_box">
+                            <input type="checkbox" id="popup1">
+                            <label for="popup1"><img src="img/play0.png" alt="" style="width: 70px"></label>
+                            <div>
+                                <div>
+                                    <iframe width="700" height="400" src="https://www.youtube.com/embed/mmiGsmbu3mQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <label for="popup1"></label>
+                                </div>
+                                <label for="popup1">X</label>
+                            </div>
+                        </div>
+                        <div class="txt_box">
+                            <div class="title">설국열차</div>
+                            <div class="info_txt">화제의 봉준호영화 예고편</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hc_big_img hover">
+                    <div class="hc_img_box"><img src="img/okja-2.jpg" alt="옥자" class="img03"></div>
+                    <div class="hc_title_box">
+                        <div class="vod_box">
+                            <input type="checkbox" id="popup2">
+                            <label for="popup2"><img src="img/play0.png" alt="" style="width: 70px"></label>
+                            <div>
+                                <div>
+                                    <iframe width="700" height="400" src="https://www.youtube.com/embed/eOdMVj1mnHE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <label for="popup2"></label>
+                                </div>
+                                <label for="popup2">X</label>
+                            </div>
+                        </div>
+                        <div class="txt_box">
+                            <div class="title">옥자</div>
+                            <div class="info_txt">화제의 봉준호영화 예고편</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="hc_thumb">
+                <div class="hc_thumb_box hover">
+                    <img src="img/gi.jpg" alt="기생충" width="220" height="84">
+                    <span class="txt">기생충</span>
+                </div>
+                <div class="hc_thumb_box">
+                    <img src="img/snow.jpg" alt="설국열차" width="220" height="84">
+                    <span class="txt">설국열차</span>
+                </div>
+                <div class="hc_thumb_box">
+                    <img src="img/okja-1.jpg" alt="옥자" width="220" height="84">
+                    <span class="txt">옥자</span>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+<!--평점 창======================-->
+
+   <div class="movie">
+    <div class="movie_detail">
+        <h3 class="screen_out">기생충 평점 </h3>
+        <div class="main_detail">
+            <div class="menu_impression menu_netizen">
+                <h4 class="tit_movie">
+                    네티즌 평점<span class="txt_menu">(611)</span>
+                    <span class="info_menu">
+                        <span class="ico_star ico_17star">평점</span>
+                        <span class="num_grade grade_02">9</span>
+                        <span class="num_grade grade_dot">.</span>
+                        <span class="num_grade grade_01">5</span>
+                    </span>
+                </h4>
+            </div>
+            <!-- 내 평점 -->
+            <div class="wrap_impression" id="wrap_impression">
+                <div class="wrap_write">
+                    <div class="cont_write" id="divContWrite">
+                        <div class="impression_write">
+                            <form action="#" method="get" class="frm_eval" id="writeCommentArea" onsubmit="return false;">
+                                <div class="area_eval">
+                                    <span class="wrap_tf" id="spanCommentArea">         
+                                        <textarea name="tfEval" id="tfEval" class="tf_impression" style="height:66px; overflow-y:auto;"></textarea>
+                                        <a href="" class="link_write"></a>
+                                    </span>
+                                    <span class="img_cmt guide_emot"></span>
+                                </div>
+
+                                <div class="write_btn">                                    
+                                    <span class="num_byte">
+                                        <span class="screen_out">현재 입력 바이트</span>
+                                        <span class="num_count" id="tfEval_byteinfo">0</span>
+                                        /<span class="screen_out">입력 가능 바이트</span>400</span>
+                                    <button type="button" class="btn_submit">등록</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <ul class="list_review list_netizen">
+
+                <li class="fst ">
+                    <div class="review_info">
+                        <a href="" class="link_review">
+                            <p class="link_profile">김수한무</p>
+                        </a>
+                        <div class="raking_grade">
+                            <span class="bg_star"><span class="bg_star inner_star" style="width:100.0%">평점</span></span>
+                            <p class="emph_grade">10</p><span class="txt_grade">/10</span>
+                        </div>
+                     
+                        <p class="desc_review">    
+                            <br>                      
+                            비에 젖지않는 고급장난감 텐트와,
+                            
+                            <br><br>비에 젖다 못해 잠겨버리는 반지하 가구
+                        </p>
+
+                        <div class="append_review">
+                            <span class="info_append">
+                                2020.07.22, 20:21
+                            </span>
+
+                            <span class="txt_bar"></span><a href="" class="link_report">신고하기</a>
+                        </div>
+                        <a href="" class="link_delete">삭제</a>
+                    </div>
+                </li>
+                <li class=" ">
+                  
+                    <div class="review_info">
+                        <a href="" class="link_review">
+                            <p class="link_profile">clske</p>
+                        </a>
+                        <div class="raking_grade">
+                            <span class="bg_star star_grade"><span class="bg_star inner_star" style="width:90.0%">평점</span></span>
+                            <p class="emph_grade">9</p><span class="txt_grade">/10</span>
+                        </div>
+                        <p class="desc_review">
+                              <br>
+                              명작
+                        </p>
+
+                        <div class="append_review">
+                            <span class="info_append">
+                                2020.07.22, 18:58
+                            </span>
+
+                            <span class="txt_bar"></span><a href="" class="link_report">신고하기</a>
+                        </div>
+                        <a href="" class="link_delete">삭제</a>
+                    </div>
+                </li>
+                <li class=" ">
+                    <div class="review_info">
+                        <a href="" class="link_review">
+                            <p class="link_profile">익스플로우</p>
+                        </a>
+                        <div class="raking_grade">
+                            <span class="bg_star star_grade"><span class="bg_star inner_star" style="width:100.0%">평점</span></span>
+                            <p class="emph_grade">10</p><span class="txt_grade">/10</span>
+                        </div>
+                        <p class="desc_review">
+                           <br>
+                            이건... 불법 다운로드도 돈내고 봐야한다...
+                        </p>
+
+                        <div class="append_review">
+                            <span class="info_append">
+                                2020.07.22, 18:17
+                            </span>
+
+                            <span class="txt_bar"></span><a href="" class="link_report">신고하기</a>
+                        </div>
+                        <a href="" class="link_delete">삭제</a>
+                    </div>
+                </li>
+                <li class=" ">
+                    <div class="review_info">
+                        <a href="" class="link_review">
+                            <p class="link_profile">lunardvse</p>
+                        </a>
+
+                        <div class="raking_grade">
+                            <span class="bg_star star_grade"><span class="bg_star inner_star" style="width:80.75%">평점</span></span>
+                            <p class="emph_grade">8</p><span class="txt_grade">/10</span>
+                        </div>
+                        <p class="desc_review">
+                            <br>
+                            지하철이라는 단어가 언급되는순간,
+                            <br><br>대다수의 관객은 자신이 어디에 이입할 지를 안다.
+                            <br>
+                            <br>
+                        </p>
+
+                        <div class="append_review">
+                            <span class="info_append">
+                                2020.07.22, 17:13
+                            </span>
+
+                            <span class="txt_bar"></span><a href="" class="link_report">신고하기</a>
+                        </div>
+                        <a href=""class="link_delete">삭제</a>
+                    </div>
+                </li>
+                <li class=" ">
+                    <div class="review_info">
+                        <a href="" class="link_review">
+                            <p class="link_profile">vitriol</p>
+                        </a>
+
+                        <div class="raking_grade">
+                            <span class="bg_star star_grade"><span class="bg_star inner_star" style="width:80.0%">평점</span></span>
+                            <p class="emph_grade">8</p><span class="txt_grade">/10</span>
+                        </div>
+                        <p class="desc_review">
+                             <br>
+                            전 가정부가 집 벨 누를 때 부터 이 영화는 장르가 바뀐다..
+                        </p>
+
+                        <div class="append_review">
+                            <span class="info_append">
+                                2020.07.22, 15:35
+                            </span>
+
+                            <span class="txt_bar"></span><a href="" class="link_report">신고하기</a>
+                        </div>
+                        <a href=""class="link_delete">삭제</a>
+                    </div>
+                </li>
+                <li class=" ">
+                    <div class="review_info">
+                        <a href="" class="link_review">
+                            <p class="link_profile">hwaseongin</p>
+                        </a>
+
+                        <div class="raking_grade">
+                            <span class="bg_star star_grade"><span class="bg_star inner_star" style="width:90.0%">평점</span></span>
+                            <p class="emph_grade">9</p><span class="txt_grade">/10</span>
+                        </div>
+                        <p class="desc_review">
+                           <br>
+                           황금 종려상 수상작을 자막없이 볼 수 있다는것 자체로 좋다
+                            </p>
+
+                        <div class="append_review">
+                            <span class="info_append">
+                                2020.07.22, 14:37
+                            </span>
+
+                            <span class="txt_bar"></span><a href="" class="link_report">신고하기</a>
+                        </div>
+                        <a href=""class="link_delete">삭제</a>
+                    </div>
+                </li>
+                <li class=" ">
+                    <div class="review_info">
+                        <a href="" class="link_review">
+                            <p class="link_profile">지혈대</p>
+                        </a>
+
+                        <div class="raking_grade">
+                            <span class="bg_star star_grade"><span class="bg_star inner_star" style="width:100.0%">평점</span></span>
+                            <p class="emph_grade">10</p><span class="txt_grade">/10</span>
+                        </div>
+                        <p class="desc_review"> 
+                           <br>
+                           반지하가 제일 아래인줄 알았다. 내려가보니 지하도 있었다.                          
+                            <br>
+                            <br>
+                        </p>
+
+                        <div class="append_review">
+                            <span class="info_append">
+                                2020.07.22, 14:17
+                            </span>
+
+                            <span class="txt_bar"></span><a href="" class="link_report">신고하기</a>
+                        </div>
+                        <a href="" class="link_delete">삭제</a>
+                    </div>
+                </li>
+                <li class=" ">
+                    <div class="review_info">
+                        <a href="" class="link_review">
+                            <p class="link_profile">마주골</p>
+                        </a>
+
+                        <div class="raking_grade">
+                            <span class="bg_star star_grade"><span class="bg_star inner_star" style="width:0.0%">평점</span></span> 
+                            <p class="emph_grade">0</p><span class="txt_grade">/10</span>
+                        </div>
+                        <p class="desc_review">
+                          
+                        </p>
+
+                        <div class="append_review">
+                            <span class="info_append">
+                                2020.07.22, 14:12
+                            </span>
+        <span class="txt_bar"></span><a href="" class="link_report">신고하기</a>
+                        </div>
+                        <a href="" class="link_delete">삭제</a>
+                    </div>
+                </li>
+                <li class=" ">
+                    <div class="review_info">
+                        <a href="" class="link_review">
+                            <p class="link_profile">june</p>
+                        </a>
+                        <div class="raking_grade">
+                            <span class="bg_star star_grade"><span class="bg_star inner_star" style="width:50.0%">평점</span></span>
+                            <p class="emph_grade">5</p><span class="txt_grade">/10</span>
+                        </div>
+                        <p class="desc_review">
+                           <br>
+                            뭔가 모를 불쾌한 영화였다. 
+                            <br>
+                            <br>영화가 불쾌하다는게 아니라 보는 내내 가슴에 뭔가 영화에서 나오는 수석이 얹혀져있는 영화다.
+                        </p>
+
+                        <div class="append_review">
+                            <span class="info_append">
+                                2020.07.22, 13:55
+                            </span>
+
+                            <span class="txt_bar"></span><a href="" class="link_report">신고하기</a>
+                        </div>
+                        <a href="" class="link_delete">삭제</a>
+                    </div>
+                </li>
+                <li class=" ">                   
+                    <div class="review_info">
+                        <a href="" class="link_review">
+                            <p class="link_profile">홍진포장</p>
+                        </a>
+                        <div class="raking_grade">
+                            <span class="bg_star star_grade"><span class="bg_star inner_star" style="width:100.0%">평점</span></span>
+                            <p class="emph_grade">10</p><span class="txt_grade">/10</span>
+                        </div>
+                        <p class="desc_review">
+                       박서준이 잘못했네ㅋㅋㅋㅋ
+                        </p>
+
+                        <div class="append_review">
+                            <span class="info_append">
+                                2020.07.22, 13:54
+                            </span>
+
+                            <span class="txt_bar"></span><a href="" class="link_report">신고하기</a>
+                        </div>
+                        <a href="" class="link_delete">삭제</a>
+                    </div>
+                </li>
+
+            </ul>
+
+            <!-- 페이징 -->
+
+
+
+            <div class="paging_popcorn">
+                <div class="inner_paging" data-tiara-layer="num_page">
+
+
+
+                    <span class="screen_out">현재페이지</span><em class="link_page">1</em>
+                    <a href="" class="link_page">2</a>
+                    <a href="" class="link_page">3</a>
+                    <a href="" class="link_page">4</a>
+                    <a href="" class="link_page">5</a>
+                </div>
+            </div>
+            <input type="hidden" id="gradePageLoaded" value="true">
+        </div>
+
+    </div>
+    </div>
+<!--    설국열차 평점창 =======================-->
+     <div class="movie">
+    <div class="movie_detail">
+       <h3 class="screen_out">설국열차 평점 </h3>
+        <div class="main_detail">
+            <div class="menu_impression menu_netizen">
+                <h4 class="tit_movie">
+                    네티즌 평점<span class="txt_menu">(24)</span>
+                    <span class="info_menu">
+                        <span class="ico_star ico_17star">평점</span>
+                        <span class="num_grade grade_02">7</span>
+                        <span class="num_grade grade_dot">.</span>
+                        <span class="num_grade grade_01">6</span>
+                    </span>
+                </h4>
+            </div>
+            <!-- 내 평점 -->
+            <div class="wrap_impression" id="wrap_impression">
+                <div class="wrap_write">
+                    <div class="cont_write" id="divContWrite">
+                        <div class="impression_write">
+                            <form action="#" method="get" class="frm_eval" id="writeCommentArea" onsubmit="return false;">
+                                <div class="area_eval">
+                                    <span class="wrap_tf" id="spanCommentArea">         
+                                        <textarea name="tfEval" id="tfEval" class="tf_impression" style="height:66px; overflow-y:auto; background: #000;"></textarea>
+                                        <a href="" class="link_write"></a>
+                                    </span>
+                                    <span class="img_cmt guide_emot"></span>
+                                </div>
+
+                                <div class="write_btn">                                    
+                                    <span class="num_byte">
+                                        <span class="screen_out">현재 입력 바이트</span>
+                                        <span class="num_count" id="tfEval_byteinfo">0</span>
+                                        /<span class="screen_out">입력 가능 바이트</span>400</span>
+                                    <button type="button" class="btn_submit">등록</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <ul class="list_review list_netizen">
+
+                <li class="fst ">
+                    <div class="review_info">
+                        <a href="" class="link_review">
+                            <p class="link_profile">매니악</p>
+                        </a>
+                        <div class="raking_grade">
+                            <span class="bg_star"><span class="bg_star inner_star" style="width:100.0%">평점</span></span>
+                            <p class="emph_grade">10</p><span class="txt_grade">/10</span>
+                        </div>
+                     
+                        <p class="desc_review">                          
+                            
+                            <br>
+                            이 영화는 신세계다 이게바로 봉준호의 신세계
+                        </p>
+
+                        <div class="append_review">
+                            <span class="info_append">
+                                2020.07.22, 20:21
+                            </span>
+
+                            <span class="txt_bar"></span><a href="" class="link_report">신고하기</a>
+                        </div>
+                        <a href="" class="link_delete">삭제</a>
+                    </div>
+                </li>
+                <li class=" ">
+                  
+                    <div class="review_info">
+                        <a href="" class="link_review">
+                            <p class="link_profile">양군</p>
+                        </a>
+                        <div class="raking_grade">
+                            <span class="bg_star star_grade"><span class="bg_star inner_star" style="width:100.0%">평점</span></span>
+                            <p class="emph_grade">10</p><span class="txt_grade">/10</span>
+                        </div>
+                        <p class="desc_review">
+                             <br>
+                             이 영화는 무시당할 수준의 영화가 아니다.
+                        </p>
+
+                        <div class="append_review">
+                            <span class="info_append">
+                                2020.07.22, 18:58
+                            </span>
+
+                            <span class="txt_bar"></span><a href="" class="link_report">신고하기</a>
+                        </div>
+                        <a href="" class="link_delete">삭제</a>
+                    </div>
+                </li>
+                <li class=" ">
+                    <div class="review_info">
+                        <a href="" class="link_review">
+                            <p class="link_profile">호이호이</p>
+                        </a>
+                        <div class="raking_grade">
+                            <span class="bg_star star_grade"><span class="bg_star inner_star" style="width:60.0%">평점</span></span>
+                            <p class="emph_grade">6</p><span class="txt_grade">/10</span>
+                        </div>
+                        <p class="desc_review">
+                          <br>
+                            영화적 메시지가 돋보이네요. 한국영화도 이런 시도를 많이 해봐야죠
+                        </p>
+
+                        <div class="append_review">
+                            <span class="info_append">
+                                2020.07.22, 18:17
+                            </span>
+
+                            <span class="txt_bar"></span><a href="" class="link_report">신고하기</a>
+                        </div>
+                        <a href="" class="link_delete">삭제</a>
+                    </div>
+                </li>
+                <li class=" ">
+                    <div class="review_info">
+                        <a href="" class="link_review">
+                            <p class="link_profile">천하무쌍</p>
+                        </a>
+
+                        <div class="raking_grade">
+                            <span class="bg_star star_grade"><span class="bg_star inner_star" style="width:37.75%">평점</span></span>
+                            <p class="emph_grade">4</p><span class="txt_grade">/10</span>
+                        </div>
+                        <p class="desc_review">
+                            <br>
+                            남궁민수가 번역하는 기계 나도 하나 갖고 싶네요.
+                            <br>
+                            <br>
+                        </p>
+
+                        <div class="append_review">
+                            <span class="info_append">
+                                2020.07.22, 17:13
+                            </span>
+
+                            <span class="txt_bar"></span><a href="" class="link_report">신고하기</a>
+                        </div>
+                        <a href=""class="link_delete">삭제</a>
+                    </div>
+                </li>
+                <li class=" ">
+                    <div class="review_info">
+                        <a href="" class="link_review">
+                            <p class="link_profile">vitriol</p>
+                        </a>
+
+                        <div class="raking_grade">
+                            <span class="bg_star star_grade"><span class="bg_star inner_star" style="width:10.0%">평점</span></span>
+                            <p class="emph_grade">1</p><span class="txt_grade">/10</span>
+                        </div>
+                        <p class="desc_review">
+                            
+                            aldks...
+                        </p>
+
+                        <div class="append_review">
+                            <span class="info_append">
+                                2020.07.22, 15:35
+                            </span>
+
+                            <span class="txt_bar"></span><a href="" class="link_report">신고하기</a>
+                        </div>
+                        <a href=""class="link_delete">삭제</a>
+                    </div>
+                </li>
+                <li class=" ">
+                    <div class="review_info">
+                        <a href="" class="link_review">
+                            <p class="link_profile">문필규</p>
+                        </a>
+
+                        <div class="raking_grade">
+                            <span class="bg_star star_grade"><span class="bg_star inner_star" style="width:50.0%">평점</span></span>
+                            <p class="emph_grade">5</p><span class="txt_grade">/10</span>
+                        </div>
+                        <p class="desc_review">
+                           
+                            </p>
+
+                        <div class="append_review">
+                            <span class="info_append">
+                                2020.07.22, 14:37
+                            </span>
+
+                            <span class="txt_bar"></span><a href="" class="link_report">신고하기</a>
+                        </div>
+                        <a href=""class="link_delete">삭제</a>
+                    </div>
+                </li>
+                <li class=" ">
+                    <div class="review_info">
+                        <a href="" class="link_review">
+                            <p class="link_profile">체육인</p>
+                        </a>
+
+                        <div class="raking_grade">
+                            <span class="bg_star star_grade"><span class="bg_star inner_star" style="width:80.0%">평점</span></span>
+                            <p class="emph_grade">8</p><span class="txt_grade">/10</span>
+                        </div>
+                        <p class="desc_review">                           
+                            <br>
+                            생각보단 거의 예술영화에 가깝네요..진중하고 상상력도 
+                            <br>가미된 괜찮은 영화였습니다...그런데 좀 대중들이 즐길만하기는 어려울것 같습니다.
+                            <br> 저도 솔직히 좀 오락면에서는 별로였네요.
+                            <br>
+                        </p>
+
+                        <div class="append_review">
+                            <span class="info_append">
+                                2020.07.22, 14:17
+                            </span>
+
+                            <span class="txt_bar"></span><a href="" class="link_report">신고하기</a>
+                        </div>
+                        <a href="" class="link_delete">삭제</a>
+                    </div>
+                </li>
+            </ul>
+            <input type="hidden" id="gradePageLoaded" value="true">
+        </div>
+
+    </div>
+    </div>
+<!--    옥자 평점창===============================-->
+     <div class="movie">
+    <div class="movie_detail">
+       <h3 class="screen_out">옥자 평점 </h3>
+        <div class="main_detail">
+            <div class="menu_impression menu_netizen">
+                <h4 class="tit_movie">
+                    네티즌 평점<span class="txt_menu">(55)</span>
+                    <span class="info_menu">
+                        <span class="ico_star ico_17star">평점</span>
+                        <span class="num_grade grade_02">9</span>
+                        <span class="num_grade grade_dot">.</span>
+                        <span class="num_grade grade_01">1</span>
+                    </span>
+                </h4>
+            </div>
+            <!-- 내 평점 -->
+            <div class="wrap_impression" id="wrap_impression">
+                <div class="wrap_write">
+                    <div class="cont_write" id="divContWrite">
+                        <div class="impression_write">
+                            <form action="#" method="get" class="frm_eval" id="writeCommentArea" onsubmit="return false;">
+                                <div class="area_eval">
+                                    <span class="wrap_tf" id="spanCommentArea">         
+                                        <textarea name="tfEval" id="tfEval" class="tf_impression" style="height:66px; overflow-y:auto; background: #000;"></textarea>
+                                        <a href="" class="link_write"></a>
+                                    </span>
+                                    <span class="img_cmt guide_emot"></span>
+                                </div>
+
+                                <div class="write_btn">                                    
+                                    <span class="num_byte">
+                                        <span class="screen_out">현재 입력 바이트</span>
+                                        <span class="num_count" id="tfEval_byteinfo">0</span>
+                                        /<span class="screen_out">입력 가능 바이트</span>400</span>
+                                    <button type="button" class="btn_submit">등록</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <ul class="list_review list_netizen">
+
+                <li class="fst ">
+                    <div class="review_info">
+                        <a href="" class="link_review">
+                            <p class="link_profile">sdfee</p>
+                        </a>
+                        <div class="raking_grade">
+                            <span class="bg_star"><span class="bg_star inner_star" style="width:100.0%">평점</span></span>
+                            <p class="emph_grade">10</p><span class="txt_grade">/10</span>
+                        </div>
+                     
+                        <p class="desc_review">                          
+                            
+                            <br>
+                            중국에서 기른 돼지 '리얼'은 폭망했고, 한국에서 기른 '옥자'는 위대했다.
+                        </p>
+
+                        <div class="append_review">
+                            <span class="info_append">
+                                2020.07.22, 20:21
+                            </span>
+
+                            <span class="txt_bar"></span><a href="" class="link_report">신고하기</a>
+                        </div>
+                        <a href="" class="link_delete">삭제</a>
+                    </div>
+                </li>
+                <li class=" ">
+                  
+                    <div class="review_info">
+                        <a href="" class="link_review">
+                            <p class="link_profile">clske</p>
+                        </a>
+                        <div class="raking_grade">
+                            <span class="bg_star star_grade"><span class="bg_star inner_star" style="width:100.0%">평점</span></span>
+                            <p class="emph_grade">10</p><span class="txt_grade">/10</span>
+                        </div>
+                        <p class="desc_review">
+                             <br>
+                              넷플릭스에사 방금 보고 크레딧올라가는중이네요.. <br>
+                              뭔가 씁슬한데 나름 생각하게도 하는 그런양화..
+                               <br>
+                              이영화에서 제이크질렌할의 연기가 제일 오짐 ㅋ
+                        </p>
+
+                        <div class="append_review">
+                            <span class="info_append">
+                                2020.07.22, 18:58
+                            </span>
+
+                            <span class="txt_bar"></span><a href="" class="link_report">신고하기</a>
+                        </div>
+                        <a href="" class="link_delete">삭제</a>
+                    </div>
+                </li>
+                <li class=" ">
+                    <div class="review_info">
+                        <a href="" class="link_review">
+                            <p class="link_profile">히든식사</p>
+                        </a>
+                        <div class="raking_grade">
+                            <span class="bg_star star_grade"><span class="bg_star inner_star" style="width:100.0%">평점</span></span>
+                            <p class="emph_grade">10</p><span class="txt_grade">/10</span>
+                        </div>
+                        <p class="desc_review">
+                          <br>
+                            이미자는 뭐라고 속삭인 걸까?
+                        </p>
+
+                        <div class="append_review">
+                            <span class="info_append">
+                                2020.07.22, 18:17
+                            </span>
+
+                            <span class="txt_bar"></span><a href="" class="link_report">신고하기</a>
+                        </div>
+                        <a href="" class="link_delete">삭제</a>
+                    </div>
+                </li>
+                <li class=" ">
+                    <div class="review_info">
+                        <a href="" class="link_review">
+                            <p class="link_profile">스카웃</p>
+                        </a>
+
+                        <div class="raking_grade">
+                            <span class="bg_star star_grade"><span class="bg_star inner_star" style="width:90.0%">평점</span></span>
+                            <p class="emph_grade">9</p><span class="txt_grade">/10</span>
+                        </div>
+                        <p class="desc_review">
+                            <br>
+                             봉준호....역시 사람 불편하게 하는 재주는 최고야
+                            <br>
+                            <br>
+                        </p>
+
+                        <div class="append_review">
+                            <span class="info_append">
+                                2020.07.22, 17:13
+                            </span>
+
+                            <span class="txt_bar"></span><a href="" class="link_report">신고하기</a>
+                        </div>
+                        <a href=""class="link_delete">삭제</a>
+                    </div>
+                </li>
+                <li class=" ">
+                    <div class="review_info">
+                        <a href="" class="link_review">
+                            <p class="link_profile">이젤론</p>
+                        </a>
+
+                        <div class="raking_grade">
+                            <span class="bg_star star_grade"><span class="bg_star inner_star" style="width:80.0%">평점</span></span>
+                            <p class="emph_grade">8</p><span class="txt_grade">/10</span>
+                        </div>
+                        <p class="desc_review">
+                            <br>
+                           누군가의 자본이 누군가의 친구였다.
+                        </p>
+
+                        <div class="append_review">
+                            <span class="info_append">
+                                2020.07.22, 15:35
+                            </span>
+
+                            <span class="txt_bar"></span><a href="" class="link_report">신고하기</a>
+                        </div>
+                        <a href=""class="link_delete">삭제</a>
+                    </div>
+                </li>
+                <li class=" ">
+                    <div class="review_info">
+                        <a href="" class="link_review">
+                            <p class="link_profile">wit142</p>
+                        </a>
+
+                        <div class="raking_grade">
+                            <span class="bg_star star_grade"><span class="bg_star inner_star" style="width:100.0%">평점</span></span>
+                            <p class="emph_grade">10</p><span class="txt_grade">/10</span>
+                        </div>
+                        <p class="desc_review">
+                          <br>
+                           감독이 봉준호란다. 그냥 보는거다
+                            </p>
+
+                        <div class="append_review">
+                            <span class="info_append">
+                                2020.07.22, 14:37
+                            </span>
+
+                            <span class="txt_bar"></span><a href="" class="link_report">신고하기</a>
+                        </div>
+                        <a href=""class="link_delete">삭제</a>
+                    </div>
+                </li>
+                <li class=" ">
+                    <div class="review_info">
+                        <a href="" class="link_review">
+                            <p class="link_profile">스지오</p>
+                        </a>
+
+                        <div class="raking_grade">
+                            <span class="bg_star star_grade"><span class="bg_star inner_star" style="width:100.0%">평점</span></span>
+                            <p class="emph_grade">10</p><span class="txt_grade">/10</span>
+                        </div>
+                        <p class="desc_review">                           
+                            <br>
+                            연출력하나는 최고다 한국에도 이런 감독이 있다는게 감사할뿐 ㅋㅋ
+                            <br>
+                        </p>
+
+                        <div class="append_review">
+                            <span class="info_append">
+                                2020.07.22, 14:17
+                            </span>
+
+                            <span class="txt_bar"></span><a href="" class="link_report">신고하기</a>
+                        </div>
+                        <a href="" class="link_delete">삭제</a>
+                    </div>
+                </li>
+                <li class=" ">
+                    <div class="review_info">
+                        <a href="" class="link_review">
+                            <p class="link_profile">악동</p>
+                        </a>
+
+                        <div class="raking_grade">
+                            <span class="bg_star star_grade">
+                            <span class="bg_star inner_star" style="width:100.0%">평점</span></span> 
+                            <p class="emph_grade">10</p><span class="txt_grade">/10</span>
+                        </div>
+                        <p class="desc_review">
+                          <br>
+                          사랑스럽고 잔혹했던 동화
+                        </p>
+
+                        <div class="append_review">
+                            <span class="info_append">
+                                2020.07.22, 14:12
+                            </span>
+        <span class="txt_bar"></span><a href="" class="link_report">신고하기</a>
+                        </div>
+                        <a href="" class="link_delete">삭제</a>
+                    </div>
+                </li>
+
+
+            </ul>
+        </div>
+
+    </div>
+    </div>
+
+
+
+
+
+
+    <footer></footer>
+
+</body></html>

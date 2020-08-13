@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../common/img/favicon_32x32.png" type="image/x-icon"/>	
+	<link rel="icon" href="../common/img/favicon_32x32.png" type="image/x-icon">
+    <title>ABOUT_______</title>
+        <link rel="stylesheet" href="css/stage3.css">
+    <link rel="stylesheet" href="../common/css/basic.css">
+   
+
+    <script type="text/javascript" src="../common/js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(function(){
+            $("header").load("../common/head.html");
+            $("footer").load("../common/foot.html");
+        });
+    </script>
+</head>
+<body style="background-image: url('img/bg.gif');background-size: cover;">
+ 
+  <header></header>
+   
+    <div class="game game1"><div class="inner">
+         
+            <div id="SplashScreen" style="border:1px solid #000; width: 1500px; height: 750px; 
+                background-image: url('img/background.png'); 
+                background-size: 1500px 750px;">
+        <div align="center" style = "margin-top:320px; margin-right: 100px; margin-left: 100px;">
+            <span class="message">STAGE 3</span><span style="line-height:40px; color:white;font-size: 20px;">START</span>
+         
+            
+<!--
+            <h3>Collect all coins to unlock the exit for next level</h3>
+            <h3>Press 'c' to turn on cheat mode and 'v' to turn it off </h3>
+-->
+           
+<!--            <input type="text" id="playerName" placeholder="Enter your name here" onkeyup="enableStartButton()" />-->
+           
+           
+            <div id="StartButton" style = "color:white;font-size: 14px;">SPACE 눌러 게임을 시작하세요.</div>
+           
+<!--            <input id="StartButton" type="button" value="Start" onclick="startGame()" />-->
+        </div>
+    </div>
+    
+<!--아래가 나와야해요--> 
+<!--
+ <div class="alert start-message">
+            <span class="message">STAGE 2</span><span style="font-size: 20px;">START</span>
+            <span class="guide-message">SPACE 눌러 게임을 시작하세요.</span>
+        </div>
+-->
+        
+<canvas id="canvas" style="border:1px solid #000; display:none" ></canvas>
+
+<div>
+    
+</div>
+
+<!--      mok start-->
+       <style>
+           .count_mok {
+               font-size:100px;
+               position:absolute;
+               font-weight: 700;
+               top:30%;
+               left: 50%;
+               transform: translate(-50%, -50%);
+               text-align: center;
+               opacity:0;
+            }
+           
+        </style>
+        <div class="count_mok">3</div>
+<!--      mok end-->    
+    
+          
+    </div></div>
+<!--
+    <div class="game game2"><div class="inner"></div></div>
+    <div class="game game3"><div class="inner"></div></div>
+    <div class="game game4"><div class="inner"></div></div>
+    <div class="game game5"><div class="inner"></div></div>
+-->
+    
+<!--
+    <div class="footer">
+        <span>footer</span>
+        <input class="sub" type="button" value="구독하기">
+    </div>
+-->
+<!-- 모바일 화면 -->
+<div class="mobile-index-wrap">
+    <div class="m-video"></div>
+    <p class="exception">게임을 시작하려면 브라우저 창을 키워주세요.<br>모바일에서 접속했다면 PC 환경으로 접속해주세요.</p>
+</div>
+<footer></footer>
+
+
+<script>
+function myFunction(m) {
+  if (m.matches) { // If media query matches
+    setTimeout("location.href='STAGE3_m.html'",0);
+  }
+}
+
+var m = window.matchMedia("(min-width: 1202px) and (max-width: 1499px)")
+myFunction(m) // Call listener function at run time
+m.addListener(myFunction) // Attach listener function on state changes
+
+
+function myFunctions(s) {
+  if (s.matches) { // If media query matches
+    setTimeout("location.href='STAGE3_s.html'",0);
+  } 
+}
+
+var s = window.matchMedia("(min-width: 902px) and (max-width: 1201px)")
+myFunctions(s) // Call listener function at run time
+s.addListener(myFunctions) // Attach listener function on state changes
+</script>
+
+
+<script src="js/parasite_game_l_cnt.js"></script> 
+
+</body>
+</html>

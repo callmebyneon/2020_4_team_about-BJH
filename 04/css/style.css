@@ -1,0 +1,354 @@
+* {
+    font-family: 'vhs font';
+}
+
+body {
+
+    margin: 0 auto;
+    color: #fff;
+
+}
+
+
+
+/*핫클립*/
+.main_hot_clip {
+    padding: 78px 0;
+}
+
+.main_hot_clip .hc_movie {
+    position: relative;
+    height: 580px;
+    background: #000;
+    overflow: hidden;
+}
+
+.main_hot_clip .hc_big_img {
+    position: absolute;
+    left: 50%;
+    width: 1920px;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    z-index: 0;
+    transition: opacity .5s;
+    ;
+}
+
+.main_hot_clip .hc_big_img.hover {
+    opacity: 1;
+    z-index: 1;
+    transition: opacity .5s;
+
+
+}
+.movie .movie_detail .hover{
+    transition: all 1s;
+}
+.main_hot_clip .hc_big_img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 400px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0));
+    z-index: 3;
+}
+
+.main_hot_clip .hc_big_img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 400px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1));
+    z-index: 1;
+}
+
+.main_hot_clip .hc_img_box {
+    position: relative;
+    z-index: 1;
+}
+
+.main_hot_clip .hc_img_box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    background: rgba(0, 0, 0, .4);
+    z-index: 1;
+}
+
+.main_hot_clip .hc_img_box::after {
+    content: '';
+    position: absolute;
+    top: 288px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .8));
+}
+
+.main_hot_clip .hc_img_box .img01{
+    width: 100%;
+    transform: translate(0%, -18%);
+}
+.main_hot_clip .hc_img_box .img02{
+    width: 100%;
+    transform: translate(0%, -12%)
+}
+.main_hot_clip .hc_img_box .img03{
+    width: 100%;   
+        transform: translate(8%, -40%);
+}
+
+.main_hot_clip .hc_title_box {
+    position: absolute;
+    top: 182px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 5;
+}
+
+.main_hot_clip .hc_title_box .txt_box {
+    margin-top: 36px;
+    line-height: 1;
+    color: #fff;
+}
+
+.main_hot_clip .hc_title_box .title {
+    padding-bottom: 15px;
+    font-size: 50px;
+    font-family: nanumEB, '맑은 고딕', 'Malgun Gothic', 'Helvetica', 'Apple SD Gothic Neo', AppleGothic, '돋움', Dotum, '굴림', Gulim, Helvetica, sans-serif;
+}
+
+.main_hot_clip .hc_title_box .info_txt {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.main_hot_clip .hc_thumb {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 5;
+    font-size: 0;
+    line-height: 1;
+}
+
+.main_hot_clip .hc_thumb .hc_thumb_box {
+    position: relative;
+    margin-left: 20px;
+    display: inline-block;
+    width: 220px;
+    height: 84px;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.main_hot_clip .hc_thumb .hc_thumb_box:first-child {
+    margin-left: 0;
+}
+
+.main_hot_clip .hc_thumb .hc_thumb_box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .6);
+    z-index: 1;
+}
+
+.main_hot_clip .hc_thumb .hc_thumb_box.hover:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(208, 92, 85, .7);
+    z-index: 2;
+}
+
+.main_hot_clip .hc_thumb .hc_thumb_box .txt {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    font-size: 17px;
+    color: #fff;
+    z-index: 3;
+    transform: translate3d(0, -50%, 0);
+    margin: 0 20px;
+    line-height: 20px;
+}
+
+.hc_movie .hc_vod_area {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    text-align: center;
+    background: #000;
+    z-index: 10;
+}
+
+.hc_movie.vod_active .hc_vod_area {
+    display: block;
+}
+
+.hc_movie .hc_vod_area video {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.hc_movie .hc_vod_area .btn_close {
+    margin: 20px 0 0 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+input[id*="popup"],
+input[id*="popup1"],
+input[id*="popup2"] {
+    display: none;
+}
+
+input[id*="popup"] + label {
+    display: inline-block;
+    padding: 19px 24px;
+    border-radius: 100%;
+    background: transparent;
+    color: #fff;
+    margin: 0% 22%;
+    cursor: pointer;
+}
+
+input[id*="popup"] + label + div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+input[id*="popup"] + label + div > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    width: 700px;
+    height: 400px;
+    background: #fff;
+    z-index: 2;
+}
+
+input[id*="popup"] + label + div > div > label {
+    position: absolute;
+    top: 0%;
+    right: 0;
+    transform: translate(40%, -40%);
+    padding: 20px;
+    background: #dd5347;
+    border-radius: 100%;
+    z-index: 2;
+}
+
+input[id*="popup"] + label + div > label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .9);
+    z-index: 1;
+}
+
+input[id*="popup"] + label + div {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s;
+}
+
+input[id*="popup"]:checked + label + div {
+    opacity: 1;
+    visibility: visible;
+
+}
+
+
+/*별점 미디어쿼리 ===================
+============================================*/
+@media all and (max-width:900px) {
+    .main_hot_clip .hc_big_img {
+    position: absolute;
+    left: 50%;
+    width: 700px;
+    }
+    .main_hot_clip .hc_title_box {
+    position: absolute;
+    top: 100px;
+}
+.main_hot_clip .hc_title_box .title {
+    padding-bottom: 15px;
+    font-size: 30px;
+
+}
+
+    input[id*="popup"] + label + div > div {
+        top: 132%;
+        width: 400px;
+        height: 300px;
+        background: #000;
+        z-index: 2;
+    }
+
+    input[id*="popup2"] + label + div > div {
+     top: 132%;
+    }
+
+    iframe {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -150%);
+        width: 400px;
+        height: 300px;
+        background: #fff;
+        z-index: 2;
+    }
+    .main_hot_clip .hc_thumb .hc_thumb_box {
+        height: 52px;
+        margin-left: 0;
+    }
+    .main_hot_clip .hc_thumb .hc_thumb_box::before{
+        border: 1px solid #fff;
+    }
+    .main_hot_clip .hc_thumb .hc_thumb_box img {
+     display: none;
+    }
+    .main_hot_clip .hc_img_box .img03{
+        transform: translate(0%, 0%);
+    }
+     .main_hot_clip .hc_img_box .img02{
+        transform: translate(0%, 0%);
+    }
+    .main_hot_clip .hc_img_box .img01{
+         transform: translate(0%, 0%);
+    }
+}

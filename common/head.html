@@ -1,0 +1,61 @@
+ <div class="head">
+   <div class="logo goIndex"></div>
+   <div class="nav">
+        <ul>
+            <li><a href="../01/who_is_he.html"><span>WHO IS HE?</span><span>감독 소개</span></a></li>
+            <li><a href="../02/filmograhpy.html"><span>FILMOGRAPHY</span><span>필모그래피</span></a></li>
+            <li><a href="../03/character.html"><span>CHARACTER</span><span>등장인물</span></a></li>
+            <li><a href="../04/community.html"><span>COMMUNITY</span><span>커뮤니티</span></a></li>
+            <li><a href="../05/goods.html"><span>GOODS</span><span>관련 상품</span></a></li>
+            <li><a href="../06/aboutus.html"><span>ABOUT US</span><span>홈페이지 안내</span></a></li>
+        </ul>
+   </div>
+</div>
+<!-- 모바일 nav-menu btn 추가 -->
+<div class="nav-btn"><span></span><span></span><span></span></div>
+<script>
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('.head').outerHeight();
+
+$(window).scroll(function(event){
+    if($(this).width() >= 901)
+        didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false; } }, 250);
+
+    function hasScrolled() {
+        var st = $(this).scrollTop();
+        if(Math.abs(lastScrollTop - st) <= delta) return;
+        if (st > lastScrollTop && st > navbarHeight){
+            $('.head').removeClass('header-down').addClass('header-up');
+        } else {
+            if(st + $(window).height() < $(document).height()) {
+                $('.head').removeClass('header-up').addClass('header-down');
+        }
+    }
+    lastScrollTop = st;
+}
+    
+$(".nav-btn").click(function(){
+    $(this).toggleClass("close");
+    $(".nav").toggleClass("opened");
+    if($(".logo").hasClass('opened')){
+        $(".logo").removeClass("opened").hide();
+    } else $(".logo").show().addClass("opened");
+});
+$(".goIndex").click(function(){
+    location.href = "../index.html"
+});
+    
+$(window).resize(function(){
+    if($(window).width() >= 901){
+        $(".logo").removeClass("opened").show();
+    } else $(".logo").hide();
+});
+</script>

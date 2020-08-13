@@ -1,0 +1,207 @@
+/*본문*/
+
+.bongbong {
+	margin-bottom: 70px;
+}
+.bong{
+    width: 90vw;
+	max-width: 1322px;
+	height: 300px;
+	margin: 0 auto;
+}
+.bongbong p{
+	width: 65%;
+	float: right;
+	line-height: 1.6;
+	margin-top: 20px;
+	margin-right: 55px;
+}
+figure.bonbon {
+	text-align: center;
+  float: left;
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  max-height: 220px;
+  width: 100%;
+  background: #000000;
+  color: #ffffff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+figure.bonbon * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+}
+
+figure.bonbon img {
+  max-width: 100%;
+  position: relative;
+  opacity: 1;
+}
+
+figure.bonbon figcaption {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  border: 1px solid white;
+  border-width: 0 1px;
+}
+
+figure.bonbon .bong1 {
+  overflow: hidden;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+figure.bonbon .bong2 {
+  overflow: hidden;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+figure.bonbon h3,
+figure.bonbon p {
+  display: table;
+  margin: 0 auto;
+  padding: 0 10px;
+  position: relative;
+  text-align: center;
+  width: auto;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+figure.bonbon h3 span,
+figure.bonbon p span {
+  font-weight: 800;
+}
+
+figure.bonbon h3:before,
+figure.bonbon p:before,
+figure.bonbon h3:after,
+figure.bonbon p:after {
+  position: absolute;
+  display: block;
+  width: 1000%;
+  height: 1px;
+  content: '';
+  background: white;
+}
+
+figure.bonbon h3:before,
+figure.bonbon p:before {
+  left: -1000%;
+}
+
+figure.bonbon h3:after,
+figure.bonbon p:after {
+  right: -1000%;
+}
+
+figure.bonbon h3:before,
+figure.bonbon h3:after {
+  top: 50%;
+}
+
+figure.bonbon p {
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+figure.bonbon p:before,
+figure.bonbon p:after {
+  bottom: 50%;
+}
+
+figure.bonbon a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+figure.bonbon:hover img,
+figure.bonbon_hover img {
+  opacity: 0.35;
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+}
+
+
+.content img{
+	width: 600px;
+	height: 120%;
+	float: right;
+}
+.moile-only {
+	display: none;
+}
+
+
+@media all and (min-width: 902px) and (max-width: 1201px){
+	.bong {
+		width: 100%;
+		margin-bottom: 15vh;
+		padding: 2vw;
+		box-sizing: border-box;
+	}
+	figure.bonbon {
+		max-width: 35%;
+	}
+	.bongbong p {
+		width: 50%;
+	}
+}
+
+@media all and (max-width: 901px){
+	
+	.bong {
+		width: 100%;
+		height: auto;
+		margin-bottom: 15vh;
+		padding: 2vw;
+		box-sizing: border-box;
+	}
+	.bong:last-child {
+		margin-bottom: 0;
+	}
+	figure.bonbon,
+	.bongbong p {
+		clear: both;
+		display: block;
+		float: none;
+	}
+	figure.bonbon {
+		max-width: 90vw;
+		margin: 30px auto;
+	}
+	.bongbong p {
+		width: 90vw;
+		margin: 0 auto;
+	}
+	.bongbong .notthis {
+		display: none;
+	}
+	.bongbong .last {
+		margin-top: 15vh;
+	}
+	.moile-only {
+		display: block;
+	}
+    .subscribe {
+        background-color: transparent;
+    }
+}

@@ -1,0 +1,223 @@
+
+html, body, header, footer,
+ul, li, p, span, b, strong, ins, sub, sup,
+h1, h2, h3, h4, h5, h6,
+a, button, input, form {margin: 0; padding: 0;}
+a, button, input, form, fieldset {border: 0; outline: none; background: transparent;}
+button, input, form, fieldset {font-family: 'NanumSquare', 'sans-serif';}
+ul, li{list-style: none;}
+header {width: 1500px; height: 100px; margin: 0 auto; position: relative;}
+.nav {width: calc(100% - 300px); height: 100px; top: 0; float: right;}
+.nav ul {width: 100%; margin: 30px auto 0;}
+.nav ul li {color: white; width: 16.666%; text-align: center; float: left;}
+.nav ul li span+span {display: none;}
+.nav ul li:hover span+span {display: block; color: #aaa}
+
+
+.game {display: none;}
+.game1 { display: block; margin: 0 auto; margin-top: 0; height: 100vh; }
+.inner {height: 750px;}
+
+
+
+body {background: url('../img/bg.gif') no-repeat center;    }
+
+/* mobile 모바일 */
+@media screen and (max-width: 901px){
+    
+}
+         
+.foot {
+    position: absolute;
+    bottom: -70px;
+    left: 0;
+    right: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+
+
+    background-size: cover;
+    overflow: hidden;
+    z-index: 1;
+}
+.container:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.game {
+    width: 1500px;
+    height: 750px;
+    margin: 100px auto 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+}
+.bottomElem {
+    display: none;
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 50;
+}
+
+
+
+.game {
+    width: 1500px;
+    height: 750px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.alert {
+    z-index: 50;
+    position: absolute;
+    color: white;
+    text-align: center;
+}
+.start-message {
+    left: 50%;
+    top: 50%;
+    width: 300px;
+    height: 130px;
+    margin-left: -150px;
+    margin-top: -70px;
+    padding-top: 15px;
+}
+.end-message,
+.clear-message {
+    display: none;
+    left: 0;
+    top: 0;
+    width: 1500px;
+    height: 750px;
+    box-sizing: border-box;
+}
+.message {
+    display: block;
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1.15;
+}
+.replay {
+    margin-top: 23%;
+}
+.guide-message {
+    font-size: 15px;
+    display: block;
+    font-weight: normal;
+    color: white;
+    margin-top: 14px;
+}
+
+/* clear message */
+.clear {
+    margin-top: 21%;
+}
+.next-stage {
+    display: block;
+    width: 150px;
+    height: 2rem;
+    margin: 14px auto;
+    border: 1px solid white;
+    color: white;
+    line-height: 2;
+    text-decoration: none;
+}
+.next-stage:hover {
+    text-decoration: underline;
+}
+
+input.onoff {
+    position: absolute;
+    left: -3000%;
+}
+
+input.onoff+label {
+    overflow: hidden;
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 56px;
+    height: 56px;
+    background: transparent;
+    z-index: 30;
+}
+
+input.onoff+label:before {
+    content: url(../src/image/on.png);
+    width: 56px;
+    height: 56px;
+}
+
+input.onoff:checked+label:before {
+    content: url(../src/image/off.png);
+}
+
+.life {
+    z-index: 40;
+}
+
+
+/*------ 인덱스에서 container 고정 + 푸터 위치 CSS ------*/
+.container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.foot {
+    position: absolute;
+    bottom: -70px;
+    left: 0;
+    right: 0;
+}
+
+
+
+@media all and (min-width: 1202px) and (max-width: 1499px){
+    /* 헤더 HEADER, 푸터 FOOTER */
+    .head {width: 1200px;}
+    
+    .foot {width: 1200px;}
+    .subscribe {
+        right: calc(50vw - 600px);
+    }
+ #SplashScreen {margin: 0 auto}   
+    /* 헤더 HEADER, 푸터 FOOTER 끝//  */
+}
+
+
+@media all and (min-width: 902px) and (max-width: 1201px){
+    /* 헤더 HEADER, 푸터 FOOTER */
+    .head {width: 900px;}
+    
+    .foot {width: 900px;}
+    .subscribe {
+        right: calc(50vw - 450px);
+    }
+    /* 헤더 HEADER, 푸터 FOOTER 끝//  */
+}
+   #SplashScreen {position: absolute; left: 7%;}
+/*--- mobile 모바일, tablet 태블릿 ---*/
+@media all and (max-width: 901px){
+    
+}
+         

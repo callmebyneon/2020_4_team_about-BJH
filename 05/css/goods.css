@@ -1,0 +1,76 @@
+html, body, header, footer,
+ul, li, p, span, b, strong, ins, sub, sup,
+a, button, input {margin: 0; padding: 0;}
+ul, li{list-style: none;}
+body {background: black;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera*/
+
+    }
+header {width: 1500px; height: 100px; margin: 0 auto; position: relative;}
+.nav {width: calc(100% - 300px); height: 100px; top: 0; float: right;}
+.nav ul {width: 100%; margin: 30px auto 0;}
+.nav ul li {width: 16.666%; text-align: center; float: left;}
+.nav ul li a {color: white; text-decoration: none;}
+.nav ul li span+span {display: none;}
+.nav ul li:hover span+span {display: block; color: #aaa}
+.logo {height: 80px; width: 200px; border-radius: 50%; float: left; margin: 0px auto; background: url('../img/logo_6.jpg') no-repeat center;}
+
+.game {display: block; margin: 0 auto; margin-top: 0; height: 100vh; width: 1500px;}
+.inner {height: 750px; background: grey;}
+
+input.sub {  
+  right: 0; width: 80px;
+} 
+
+/*
+.moveblock {
+    position: relative;
+    top: 200px;
+   width: 100%;
+ 
+   height: 300px;
+   opacity: 1;
+  
+  
+ 
+}
+*/
+.footer {
+    width: 1500px; height: 100px; margin: 0 auto;
+    background : blue;
+    z-index: 99999;
+    position: absolute; bottom: -100px; left: 0;right: 0;
+}
+
+
+@media all and (min-width: 1202px) and (max-width: 1499px){
+    header {width: 1200px;}
+    
+    .footer {width: 1200px;}
+}
+
+
+@media all and (min-width: 1026px) and (max-width: 1201px){
+    header {width: 1024px;}
+ .nav {width: calc(100% - 200px); height: 100px; top: 0; float: right;}
+    .footer {width: 1024px;}
+}
+
+
+@media all and (min-width: 902px) and (max-width: 1025px){
+    header {width: 900px;}
+    
+    .footer {width: 900px;}
+   
+}
+
+
+/* mobile 모바일 */
+@media all and (max-width: 901px){
+    
+}
+         

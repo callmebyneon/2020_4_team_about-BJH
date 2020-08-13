@@ -1,0 +1,353 @@
+
+
+/** 본문 **/
+
+
+.movie h4,h3,
+strong {
+    color: #fff;
+    font-family: 'NanumSquare', 'sans-serif';
+
+}
+.movie ul{
+    margin: 0;
+    padding: 0;
+}
+textarea{
+    color: #fff;
+     background: #000;
+}
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+/* 공통클래스 */
+.movie .txt_bar {
+    display: inline-block;
+    width: 1px;
+    height: 20px;
+    background-color: #fff;
+    vertical-align: top
+}
+
+.movie .tit_movie {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: normal
+}
+
+.num_count {
+    float: left;
+    padding-left: 5px;
+    color: #989898
+}
+.movie .paging_comm .inner_paging {
+    display: inline-block
+}
+
+/* 본문 페이징 */
+.movie .paging_popcorn {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    height: 28px;
+    margin: 0 auto;
+    padding-top: 16px;
+    border-top: 2px solid #f5f5f5;
+    text-align: center
+}
+
+.movie .paging_popcorn .inner_paging {
+    display: inline-block;
+    overflow: hidden
+}
+
+.movie .paging_popcorn .link_page {
+    display: inline-block;
+    min-width: 26px;
+    height: 26px;
+    margin: 0 5px;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    color: #333;
+    vertical-align: top
+}
+
+.movie .paging_popcorn a.link_page:hover {
+    text-decoration: underline;
+    color: #ff382e
+}
+
+.movie .paging_popcorn em.link_page {
+    border-radius: 13px;
+    background-color: #ff382e;
+    color: #fff;
+    text-decoration: none
+}
+.movie .paging_popcorn .link_next {
+    width: 27px;
+    height: 26px;
+    margin: 0 0 0 17px
+}
+
+/* 별점 common */
+.raking_grade {
+    display: inline-block;
+    line-height: 22px
+}
+
+.raking_grade .bg_star {
+    display: block;
+    float: left;
+    width: 106px;
+    height: 17px;
+    background: url(../img/bg_star.png) no-repeat 0 0
+}
+
+.raking_grade .bg_star .inner_star {
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    background-position: 0 -20px;
+    text-indent: -9999px
+}
+
+.raking_grade .emph_grade {
+    float: left;
+    padding-left: 10px;
+    font-size: 18px;
+    line-height: 15px;
+    font-weight: bold;
+    color: #fff;
+}
+.raking_grade .txt_grade {
+    float: left;
+    font-size: 18px;
+    line-height: 15px;
+    color: #989898
+}
+.movie input,
+textarea {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+.movie input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none
+}
+/* 영화상세 - 메인 */
+.movie .movie_detail {
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px 0 0
+}
+
+
+.movie .movie_detail:after {
+    display: block;
+    clear: both;
+    content: ''
+}
+
+/* 영화상세 - 내평점 */
+
+.wrap_impression .wrap_write {
+    position: relative
+}
+
+
+.wrap_impression .cont_write {
+    display: block;
+    border: 1px solid #E3E3E3
+}
+.cont_write .impression_write {
+    position: relative;
+    height: 115px;
+    background: #000;
+    color: #888
+}
+.impression_write .wrap_tf {
+    display: block;
+    overflow: hidden;
+    height: 60px;
+    padding: 16px 165px 0 20px
+}
+.impression_write .link_write {
+    display: none
+}
+.impression_write .tf_impression {
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    line-height: 18px;
+    border: 0 none;
+    resize: none;
+    outline: none
+}
+
+
+.impression_write .lab_impression {
+    position: absolute;
+    left: 18px;
+    top: 16px;
+    font-size: 14px
+}
+.impression_write .num_byte {
+    position: absolute;
+    left: 15px;
+    bottom: 8px;
+    font-size: 13px
+}
+
+.impression_write .num_byte .num_count {
+    display: block
+}
+
+.impression_write .btn_submit {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 116px;
+    height: 116px;
+    font-size: 15px;
+    background: #FF0C00;
+    color: #fff;
+    border-radius: 0
+}
+
+.main_detail .menu_netizen {
+    padding: 0
+}
+
+.menu_netizen .tit_movie {
+    display: block;
+    margin: 4px 0 21px 0px;
+}
+
+.menu_netizen .txt_menu {
+    margin-left: 5px;
+    color: #989898
+}
+
+.menu_netizen .info_menu {
+    margin: 5px 0 0 6px
+}
+.movie .list_review .thumb_append + .desc_review {
+    padding-top: 13px
+}
+
+/* 영화상세 - 평점 */
+
+.list_review li {
+    overflow: hidden;
+    width: 100%;
+    padding: 16px 0 18px;
+    border-top: 2px solid #f5f5f5;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.list_review li:first-child {
+    border-top: 0 none
+}
+
+.list_review .review_info {
+    overflow: hidden;
+    position: relative
+}
+
+.list_review .review_info .raking_grade {
+    padding: 5px 0 0 14px
+}
+
+
+.list_review .review_info .link_review {
+    float: left
+}
+
+.list_review .review_info .link_profile {
+    font-weight: bold;
+    color: #fff
+}
+
+.list_review  .link_delete {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #989898
+}
+
+.append_review {
+    padding-top: 10px;
+    font-size: 16px;
+    color: #989898
+}
+
+.append_review .info_append {
+    display: none
+}
+
+.append_review .txt_bar {
+    display: none;
+    height: 12px;
+    margin: 4px 12px 0;
+    background-color: #f7f7f7
+}
+
+.append_review .link_report {
+    display: inline-block;
+    color: #989898
+}
+
+.list_netizen .review_info {
+    padding-left: 0
+}
+
+.list_netizen .append_review .info_append {
+    display: inline-block
+}
+
+.list_netizen .append_review .txt_bar {
+    display: inline-block
+}
+
+.list_master .review_info {
+    padding-left: 0
+}
+
+.list_master .append_review .info_append {
+    display: inline-block
+}
+
+.list_master .append_review .link_report {
+    display: none
+}
+
+/*** h.css 1100 대응 ***/
+@media only screen and (min-width:900px) {
+    .movie .paging_popcorn {
+        max-width: 1100px
+    }
+    .movie .movie_detail .main_detail {
+        width: 810px
+    }
+}
+@media (max-width:899px){
+       .movie .movie_detail {
+        width: 300px;
+    }
+    .list_review .review_info .raking_grade {
+    padding: 17px 0 0 11px;
+}
+    .raking_grade .emph_grade{
+        font-size: 14px;
+        line-height: 0px;
+    }
+    .raking_grade .txt_grade{
+        line-height: 28px;
+        font-size: 16px;
+    }
+}

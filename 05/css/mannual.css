@@ -1,0 +1,2814 @@
+.goodswrap {
+    width: 100%;
+    background: black;
+
+}
+
+.s1 {}
+
+.ok {}
+
+.subnav1 {
+    display: flex;
+    width: 100%;
+
+}
+
+.subnavgrup {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 27px;
+    text-align: center;
+    
+    margin: 0;
+    padding: 0;
+}
+
+.subnavgrup span {
+    font-size: 17px;
+    line-height: 44px;
+
+
+}
+
+.subnavgrup li {
+    width: 460px;
+
+/*    background:  linear-gradient(391deg, #424242 80%, black);*/
+    background:  linear-gradient(391deg, #323232 80%, black);
+
+
+
+    /*    border: 1px solid black;*/
+    border-radius: 20px 0px 0px 0px;
+    cursor: pointer;
+/*    color: #fff;*/
+    color: #fff;
+}
+/*
+.subnavgrup li:hover {
+    background: linear-gradient(391deg, #6d6d6d 80%, black);
+
+
+
+}*/
+
+.subnavgrup li:hover,
+.subnavgrup li.active {
+    background: linear-gradient(391deg, #6d6d6d 80%, black);
+}
+
+
+.active {
+    background: #424242;
+}
+
+.imgbox {
+    position: relative;
+    width: 100%;
+    background: black;
+    height: 100%;
+
+}
+.buy10.main {
+    display: block;
+    }
+.s1 {
+    right: 0;
+    position: relative;
+    width: 2000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 85%;
+    transition: right 1s;
+}
+
+
+.flexbox {
+
+    overflow: hidden;
+    margin: 0 auto;
+    width: 1500px;
+    height: 656px;
+    position: relative;
+    margin-bottom: 300px;
+}
+
+
+
+.s1 .item.img0 {
+    background: url(../img/ok1/goods/ok1.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+
+}
+
+.s1 .item.img1 {
+    background: url(../img/ok1/goods/ok2.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.s1 .item.img2 {
+    background: url(../img/ok1/goods/ok3%20.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.s1 .item.img3 {
+    background: url(../img/ok1/goods/ok4%20.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.textarea {
+    position: relative;
+    z-index: 888;
+    text-align: center;
+    margin-top: 5px;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+.textarea .buy10 {
+    cursor: pointer;
+    font-size: 10px;
+    width: 40px;
+    display: inline-block;
+    margin-top: 0px;
+    border: 1px solid #fff;
+    padding: 7px;
+}
+
+/*img*/
+
+.s1 .s1box {
+    width: 400px;
+    height: 400px;
+
+}
+
+
+/*next right button*/
+
+
+
+
+.next img {
+
+    z-index: 9999;
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    cursor: pointer;
+}
+
+.right img {
+    z-index: 9999;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 30px;
+    cursor: pointer;
+}
+
+/*end*/
+
+
+/*okja*/
+.ok {
+    right: 0;
+    position: relative;
+    width: 2000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 85%;
+    transition: right 1s;
+}
+
+.ok .okbox {
+    width: 400px;
+    height: 400px;
+
+}
+
+.ok .item.img0 {
+    background: url(../img/s1/goods/bag.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.ok .item.img1 {
+    background: url(../img/s1/goods/mug.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.ok .item.img2 {
+    background: url(../img/s1/goods/Shirt%20.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.ok .item.img3 {
+    background: url(../img/s1/goods/wall%20art.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+/*helminth*/
+.helminth {
+    right: 0;
+    position: relative;
+    width: 2000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 85%;
+    transition: right 1s;
+    z-index: 887;
+}
+
+.helminth .helminthbox {
+    width: 400px;
+    height: 400px;
+
+}
+
+.helminth .item.img0 {
+    background: url(../img/helminth/goods/bag.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.helminth .item.img1 {
+    background: url(../img/helminth/goods/mug.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.helminth .item.img2 {
+    background: url(../img/helminth/goods/Shirt%20.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.helminth .item.img3 {
+    background: url(../img/helminth/goods/wall%20art.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+
+/*mart*/
+.right_top_login .items .kim > .kim2 {
+width: 50%;
+    height: 100%;
+}
+.content .right_top {
+    position: fixed;
+    z-index: 9999999;
+    right: 50px;
+    top: 85%;
+    display: flex;
+    flex-direction: column;
+
+
+
+
+}
+.baskett {
+
+    position: fixed;
+        border: 2px solid #fff;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+right: 20px;
+          cursor: pointer;
+    transition: all 1s;
+        transform: translateX(0);
+}
+
+.moving {
+    animation-name: moving;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes moving {
+    0% {
+        transform: translateX(0px);
+    }
+    30% {
+        transform: translateX(10px);
+    }
+    60% {
+        transform: translateX(-5px);
+    }
+    90% {
+        transform: translateX(2px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+.moving2 {
+    animation-name: moving2;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes moving2 {
+    0% {
+        transform: translateX(0px);
+    }
+    30% {
+        transform: translateX(10px);
+    }
+    60% {
+        transform: translateX(-5px);
+    }
+    90% {
+        transform: translateX(2px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
+.baskett img {
+    position: relative;
+    display: inline-block;
+    top: 15px;
+ width: 40px;
+    left: 8px;
+}
+.right_top .right_top_login {
+    margin-right: 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+
+.items {
+    position: absolute;
+    width: 300px;
+    left: 130px;
+    border: 1px solid #fff;
+    background: black;
+    top: -568px;
+    /*    background-color: transparent;*/
+    height: 451px;
+border-radius: 5px 5px 0px 0px;
+    overflow: hidden;
+}
+
+
+.topmit {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #fff;
+    display: inline-block;
+    line-height: 40px;
+
+}
+
+.itemslist {
+    width: 100%;
+    
+    position: relative;
+}
+/* width */
+.items::-webkit-scrollbar {
+  width: 4px;
+    
+} 
+/* Track */
+.items::-webkit-scrollbar-track {
+  background: black; 
+}
+ 
+/* Handle */
+.items::-webkit-scrollbar-thumb {
+background-color:rgb(255,0,0);
+}
+
+
+
+
+.bflex {
+    position: absolute;
+    bottom: 68px;
+    border: 1px solid #fff;
+    width: 300px;
+    background: black;
+   left: 130px;
+ color: #fff;
+        border-radius: 0px 0px 5px 5px
+}
+
+
+
+.bottom {
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: baseline;
+
+}
+
+.buy {
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    bottom: 0;
+    margin-right: 10px;
+    width: 50px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+    background: black;
+
+}
+
+.itemxicon img {
+    position: relative;
+    left: 9px;
+    width: 15px;
+    
+    cursor: pointer;
+}
+
+.kim {
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    line-height: 20px;
+
+color: #fff;
+
+}
+
+.makittlist1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    transition: all 1s;
+    
+}
+
+.maketnum {
+    position: absolute;
+    right: 0px;
+    bottom: 9px;
+    top: 26px;
+    font-size: 10px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+input[id="buy"] {
+    outline: none;
+    box-shadow: none;
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.right_top_login .items .kim > span {
+    display: inline-block;
+    width: 30%;
+    position: relative;
+    right: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.right_top_login .items .kim > .kim2 {
+    width: 50%;
+    height: 100%;
+}
+/*marticon*/
+/*    --hoverline--*/
+.xline900 {
+
+   background-color: transparent;
+    transition: all 1s;
+    left: 0px;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin: 0 auto;
+    top: 11px;
+    cursor: pointer;
+    z-index: 100;
+background: url(../img/mart/Wchrtplus.png) no-repeat;
+    background-size: 25px 25px;
+   opacity: 1;
+    
+
+}
+
+
+
+
+
+
+.xline901 {
+    transition: all 1s;
+    left: 0px;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin: 0 auto;
+    top: 11px;
+    cursor: pointer;
+    z-index: 100;
+background: url(../img/mart/Wchrtplus.png) no-repeat;
+    background-size: 25px 25px;
+   opacity: 1;
+
+}
+
+
+
+
+
+/*info*/
+
+.blackwall:before {
+
+content: '';
+    display: block;
+position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../img/ok1/backbround_2.gif) no-repeat;
+    background-size: cover;
+
+    z-index: -1;}
+
+.blackwall {
+    bottom: 0;
+     position: absolute;
+width: 100%;
+z-index: 999;
+
+    height: 100%;
+
+}
+.submain {
+padding: 30px 0 0 0;
+margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+.submain2 {
+padding: 30px 0 0 0;
+margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+.subinfo1 {
+
+     width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    
+}
+.subinfo1 {
+
+     width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    
+}
+.target {
+    display: block;
+    width: 100%;
+}
+.magnifier {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    
+    border-radius: 100%;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.85), 0 0 3px 3px rgba(0, 0, 0, 0.25);
+    display: none;
+}
+.blackwall2:before {
+
+content: '';
+    display: block;
+position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../img/ok1/backbround_2.gif) no-repeat;
+    background-size: cover;
+
+    z-index: -1;}
+
+.blackwall2 {
+    bottom: 0;
+     position: absolute;
+width: 100%;
+    left: 0;
+z-index: 999;
+
+    height: 100%;
+
+}
+.blackwall2  .submain {
+padding: 30px 0 0 0;
+margin: 0 auto;
+    width: 500px;
+    height: 500px;
+}
+.blackwall2  .subinfo1 {
+/*    background: url(../img/ok1/goods/ok2.png) no-repeat;*/
+     width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    
+}
+.blackwall.another{
+    display: none;
+}
+.blackwall2.another {
+    display: none;
+}
+
+/*반응형버튼체인지*/
+
+
+.s1 .buy10.another {
+        display: none;
+    } 
+
+@media all and (min-width: 1202px) and (max-width: 1499px) {
+    .s1 .item.img0 {
+
+    background: url(../img/ok1/goods/ok1.png) no-repeat;
+    width: 300px;
+    height: 300px;
+       margin: 0 auto;
+
+    background-size: 100% 100%;
+ 
+}
+.s1 .item.img0 {
+
+    background: url(../img/ok1/goods/ok1.png) no-repeat;
+    width: 300px;
+    height: 300px;
+       margin: 0 auto;
+
+    background-size: 100% 100%;
+ 
+}
+.s1 .item.img1 {
+
+    background: url(../img/ok1/goods/ok2.png) no-repeat;
+    width: 300px;
+    height: 300px;
+       margin: 0 auto;
+    background-size: 100% 100%;
+}
+
+.s1 .item.img2 {
+    background: url(../img/ok1/goods/ok3%20.png) no-repeat;
+    width: 300px;
+    height: 300px;
+       margin: 0 auto;
+    background-size: 100% 100%;
+}
+
+.s1 .item.img3 {
+    background: url(../img/ok1/goods/ok4%20.png) no-repeat;
+      width: 300px;
+    height: 300px;
+       margin: 0 auto;
+    background-size: 100% 100%;
+}
+
+.ok .item.img0 {
+    background: url(../img/s1/goods/bag.png) no-repeat;
+    width: 300px;
+    height: 300px;
+       margin: 0 auto;
+    background-size: 100% 100%;
+}
+
+.ok .item.img1 {
+    background: url(../img/s1/goods/mug.png) no-repeat;
+    width: 300px;
+    height: 300px;
+       margin: 0 auto;
+    background-size: 100% 100%;
+}
+
+.ok .item.img2 {
+    background: url(../img/s1/goods/Shirt%20.png) no-repeat;
+     width: 300px;
+    height: 300px;
+       margin: 0 auto;
+    background-size: 100% 100%;
+}
+
+.ok .item.img3 {
+    background: url(../img/s1/goods/wall%20art.png) no-repeat;
+    width: 300px;
+    height: 300px;
+       margin: 0 auto;
+    background-size: 100% 100%;
+}
+.helminth .item.img0 {
+    background: url(../img/helminth/goods/bag.png) no-repeat;
+      width: 300px;
+    height: 300px;
+       margin: 0 auto;
+    background-size: 100% 100%;
+}
+
+.helminth .item.img1 {
+    background: url(../img/helminth/goods/mug.png) no-repeat;
+     width: 300px;
+    height: 300px;
+       margin: 0 auto;
+    background-size: 100% 100%;
+}
+
+.helminth .item.img2 {
+    background: url(../img/helminth/goods/Shirt%20.png) no-repeat;
+    width: 300px;
+    height: 300px;
+       margin: 0 auto;
+    background-size: 100% 100%;
+}
+
+.helminth .item.img3 {
+    background: url(../img/helminth/goods/wall%20art.png) no-repeat;
+      width: 300px;
+    height: 300px;
+       margin: 0 auto;
+    background-size: 100% 100%;
+}
+    
+    .imgbox {
+        
+    position: relative;
+    width: 100%;
+    background: black;
+    height: 100%;
+
+}
+    
+    .s1 {
+    right: 0;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 86%;
+    transition: right 1s;
+}
+
+
+.flexbox {
+
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    height: 656px;
+    position: relative;
+    margin-bottom: 300px;
+}
+
+
+
+
+.textarea {
+    text-align: center;
+    margin-top: 5px;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+.textarea .buy10 {
+    cursor: pointer;
+    font-size: 10px;
+    width: 40px;
+    display: inline-block;
+    margin-top: 0px;
+    border: 1px solid #fff;
+    padding: 7px;
+}
+
+
+
+
+
+
+
+/*end*/
+
+
+/*okja*/
+.ok {
+    right: 0;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 86%;
+    transition: right 1s;
+}
+
+
+/*helminth*/
+.helminth {
+    right: 0;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 86%;
+    transition: right 1s;
+}
+
+
+
+ 
+
+/*info*/
+
+.blackwall:before {
+
+content: '';
+    display: block;
+position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../img/ok1/backbround_2.gif) no-repeat;
+    background-size: cover;
+
+    z-index: -1;}
+
+.blackwall {
+    bottom: 0;
+     position: absolute;
+width: 100%;
+z-index: 999;
+
+    height: 100%;
+
+}
+
+
+.blackwall2:before {
+
+content: '';
+    display: block;
+position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../img/ok1/backbround_2.gif) no-repeat;
+    background-size: cover;
+
+    z-index: -1;}
+
+.blackwall2 {
+    bottom: 0;
+     position: absolute;
+width: 100%;
+z-index: 999;
+left: 0;
+    height: 100%;
+
+}
+
+        .next img {
+    display: none;
+} .right img {
+    display: none;
+}
+    
+}
+
+
+@media all and (min-width: 1026px) and (max-width: 1201px) {
+    .imgbox {
+    position: relative;
+    width:  100%;
+    background: black;
+    height: 100%;
+
+}
+    
+/*    추가*/
+    
+   .s1 .buy10.another {
+        display: block;
+       margin: 0 auto;
+    } 
+    
+   .s1 .buy10.main {
+    display: none;
+    }
+/*추가*/
+    .blackwall.main {
+        display: none;
+    }
+     .blackwall2.main {
+        display: none;
+    }
+    .blackwall.another {
+        display: block;
+    }
+     .blackwall2.another {
+        display: block;
+    }
+    
+/*수정*/
+.s1 {
+    right: 0;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+
+
+    height: 85%;
+    transition: right 1s;
+}
+
+
+/*수정*/
+.flexbox {
+
+/*    overflow:hidden;*/
+
+    width: 100%;
+    height: 3000px;
+    position: relative;
+    margin-bottom: 300px;
+}
+
+/*추가*/
+    .s1box.s1img1 {
+      
+        margin: 0px auto 200px ;
+
+     
+    }.s1box.s1img2 {
+         margin: 0px auto 200px ;
+    }.s1box.s1img3 {
+        margin: 0px auto 200px ;
+    }.s1box.s1img4 {
+        margin: 0px auto ;
+    }
+    
+    .okbox.okimg1 {    margin: 0px auto 200px ;}
+    .okbox.okimg2 {    margin: 0px auto 200px ;}
+    .okbox.okimg3 {     margin: 0px auto 200px ;}
+    .okbox.okimg4 {    margin: 0px auto 200px ;}
+.s1 .item.img0 {
+
+    background: url(../img/ok1/goods/ok1.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+
+}
+
+.s1 .item.img1 {
+
+    background: url(../img/ok1/goods/ok2.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.s1 .item.img2 {
+    background: url(../img/ok1/goods/ok3%20.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.s1 .item.img3 {
+    background: url(../img/ok1/goods/ok4%20.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.textarea {
+    text-align: center;
+    margin-top: 5px;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+
+}
+
+.textarea .buy10 {
+    cursor: pointer;
+    font-size: 10px;
+    width: 40px;
+    display: inline-block;
+    margin-top: 0px;
+    border: 1px solid #fff;
+    padding: 7px;
+}
+
+/*img*/
+    
+/*수정*/
+.s1 .s1box {
+    width: 550px;
+    height: 550px;
+
+}
+
+
+/*next right button*/
+
+
+
+
+.next img {
+
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    cursor: pointer;
+}
+
+.right img {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 30px;
+    cursor: pointer;
+}
+
+/*end*/
+
+
+/*okja*/
+.ok {
+    right: 0;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+
+
+    height: 85%;
+    transition: right 1s;
+}
+
+.ok .okbox {
+    width: 550px;
+    height: 550px;
+
+}
+
+.ok .item.img0 {
+    background: url(../img/s1/goods/bag.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.ok .item.img1 {
+    background: url(../img/s1/goods/mug.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.ok .item.img2 {
+    background: url(../img/s1/goods/Shirt%20.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.ok .item.img3 {
+    background: url(../img/s1/goods/wall%20art.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+/*helminth*/
+.helminth {
+   right: 0;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+
+
+    height: 85%;
+    transition: right 1s;
+}
+
+.helminth .helminthbox {
+    width: 550px;
+    height: 550px;
+
+}
+    .helminthbox.helminthimg1 {margin: 0px auto 200px }
+    .helminthbox.helminthimg2 {margin: 0px auto 200px }
+    .helminthbox.helminthimg3 {margin: 0px auto 200px }
+    .helminthbox.helminthimg4 {margin: 0px auto 200px }
+.helminth .item.img0 {
+    background: url(../img/helminth/goods/bag.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.helminth .item.img1 {
+    background: url(../img/helminth/goods/mug.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.helminth .item.img2 {
+    background: url(../img/helminth/goods/Shirt%20.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.helminth .item.img3 {
+    background: url(../img/helminth/goods/wall%20art.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+
+/*mart*/
+.right_top_login .items .kim > .kim2 {
+width: 50%;
+    height: 100%;
+}
+.content .right_top {
+    position: fixed;
+    z-index: 9999999;
+    right: 50px;
+    top: 83%;
+    display: flex;
+    flex-direction: column;
+
+
+
+
+}
+.baskett {
+
+    position: fixed;
+        border: 2px solid #fff;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+
+          cursor: pointer;
+    transition: all 1s;
+        transform: translateX(0);
+}
+
+.moving {
+    animation-name: moving;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes moving {
+    0% {
+        transform: translateX(0px);
+    }
+    30% {
+        transform: translateX(10px);
+    }
+    60% {
+        transform: translateX(-5px);
+    }
+    90% {
+        transform: translateX(2px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+.moving2 {
+    animation-name: moving2;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes moving2 {
+    0% {
+        transform: translateX(0px);
+    }
+    30% {
+        transform: translateX(10px);
+    }
+    60% {
+        transform: translateX(-5px);
+    }
+    90% {
+        transform: translateX(2px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
+.baskett img {
+    position: relative;
+    display: inline-block;
+    top: 15px;
+ width: 40px;
+    left: 10px;
+}
+.right_top .right_top_login {
+    margin-right: 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+
+.items {
+    position: absolute;
+    width: 300px;
+    left: 130px;
+    border: 1px solid #fff;
+    background: black;
+    top: -568px;
+    /*    background-color: transparent;*/
+    height: 451px;
+border-radius: 5px 5px 0px 0px;
+    overflow: hidden;
+}
+
+
+.topmit {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #fff;
+    display: inline-block;
+    line-height: 40px;
+
+}
+
+.itemslist {
+    width: 100%;
+    
+    position: relative;
+}
+/* width */
+.items::-webkit-scrollbar {
+  width: 1px;
+    
+} 
+/* Track */
+.items::-webkit-scrollbar-track {
+  background: black; 
+}
+ 
+/* Handle */
+.items::-webkit-scrollbar-thumb {
+background-color:rgb(255,0,0);
+}
+
+
+
+
+.bflex {
+    position: absolute;
+    bottom: 68px;
+    border: 1px solid #fff;
+    width: 300px;
+    background: black;
+   left: 130px;
+ color: #fff;
+        border-radius: 0px 0px 5px 5px
+}
+
+
+
+.bottom {
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: baseline;
+
+}
+
+.buy {
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    bottom: 0;
+    margin-right: 10px;
+    width: 50px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+    background: black;
+
+}
+
+.itemxicon img {
+    position: relative;
+    left: 9px;
+    width: 15px;
+    
+    cursor: pointer;
+}
+
+.kim {
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    line-height: 20px;
+
+color: #fff;
+
+}
+
+.makittlist1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    transition: all 1s;
+    
+}
+
+.maketnum {
+    position: absolute;
+    right: 0px;
+    bottom: 9px;
+    top: 26px;
+    font-size: 10px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+input[id="buy"] {
+    outline: none;
+    box-shadow: none;
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.right_top_login .items .kim > span {
+    display: inline-block;
+    width: 30%;
+    position: relative;
+    right: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.right_top_login .items .kim > .kim2 {
+    width: 50%;
+    height: 100%;
+}
+/*marticon*/
+/*    --hoverline--*/
+.xline900 {
+
+   background-color: transparent;
+    transition: all 1s;
+    left: 0px;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin: 0 auto;
+    top: 11px;
+    cursor: pointer;
+    z-index: 100;
+background: url(../img/mart/Wchrtplus.png) no-repeat;
+    background-size: 25px 25px;
+   opacity: 1;
+    
+
+}
+
+
+
+
+
+
+.xline901 {
+    transition: all 1s;
+    left: 0px;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin: 0 auto;
+    top: 11px;
+    cursor: pointer;
+    z-index: 100;
+background: url(../img/mart/Wchrtplus.png) no-repeat;
+    background-size: 25px 25px;
+   opacity: 1;
+
+}
+
+
+
+
+
+/*info*/
+
+.blackwall:before {
+
+content: '';
+    display: block;
+position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/ok1/backbround_2.gif) no-repeat;
+    background-size: cover;
+
+    z-index: -1;}
+
+.blackwall {
+    top: 0;
+     position: absolute;
+width: 100%;
+z-index: 999;
+
+    height: 100%;
+
+}
+.submain {
+padding: 30px 0 0 0;
+margin: 0 auto;
+    width: 500px;
+    height: 500px;
+}
+.subinfo1 {
+    background: url(../img/ok1/goods/ok1.png) no-repeat;
+     width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    
+}
+
+.blackwall2:before {
+
+content: '';
+    display: block;
+position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/ok1/backbround_2.gif) no-repeat;
+    background-size: cover;
+
+    z-index: -1;}
+
+.blackwall2 {
+    bottom: 1200px;
+     position: absolute;
+width: 100%;
+    left: 0;
+z-index: 999;
+
+    height: 100vh;
+
+}
+.blackwall2  .submain {
+padding: 30px 0 0 0;
+margin: 0 auto;
+    width: 500px;
+    height: 500px;
+}
+.blackwall2  .subinfo1 {
+    background: url(../img/ok1/goods/ok2.png) no-repeat;
+     width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    
+}
+    .next img {
+    display: none;
+} .right img {
+    display: none;
+}
+
+}
+
+
+@media all and (min-width: 902px) and (max-width: 1025px) {
+    .imgbox {
+    position: relative;
+    width: 100%;
+    background: black;
+    height: 100%;
+
+}
+    
+/*    추가*/
+    
+   .s1 .buy10.another {
+        display: block;
+       margin: 0 auto;
+    } 
+    
+   .s1 .buy10.main {
+    display: none;
+    }
+/*추가*/
+    .blackwall.main {
+        display: none;
+    }
+     .blackwall2.main {
+        display: none;
+    }
+    .blackwall.another {
+        display: block;
+    }
+     .blackwall2.another {
+        display: block;
+    }
+    
+/*수정*/
+.s1 {
+    right: 0;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+
+
+    height: 85%;
+    transition: right 1s;
+}
+
+
+/*수정*/
+.flexbox {
+
+/*    overflow:hidden;*/
+
+    width: 100%;
+    height: 3000px;
+    position: relative;
+    margin-bottom: 300px;
+}
+
+/*추가*/
+    .s1box.s1img1 {
+      
+        margin: 0px auto 200px ;
+
+     
+    }.s1box.s1img2 {
+         margin: 0px auto 200px ;
+    }.s1box.s1img3 {
+        margin: 0px auto 200px ;
+    }.s1box.s1img4 {
+        margin: 0px auto ;
+    }
+    
+    .okbox.okimg1 {    margin: 0px auto 200px ;}
+    .okbox.okimg2 {    margin: 0px auto 200px ;}
+    .okbox.okimg3 {     margin: 0px auto 200px ;}
+    .okbox.okimg4 {    margin: 0px auto 200px ;}
+.s1 .item.img0 {
+
+    background: url(../img/ok1/goods/ok1.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+
+}
+
+.s1 .item.img1 {
+
+    background: url(../img/ok1/goods/ok2.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.s1 .item.img2 {
+    background: url(../img/ok1/goods/ok3%20.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.s1 .item.img3 {
+    background: url(../img/ok1/goods/ok4%20.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.textarea {
+    text-align: center;
+    margin-top: 5px;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+
+}
+
+.textarea .buy10 {
+    cursor: pointer;
+    font-size: 10px;
+    width: 40px;
+    display: inline-block;
+    margin-top: 0px;
+    border: 1px solid #fff;
+    padding: 7px;
+}
+
+/*img*/
+    
+/*수정*/
+.s1 .s1box {
+    width: 550px;
+    height: 550px;
+
+}
+
+
+/*next right button*/
+
+
+
+
+.next img {
+
+    z-index: 999999;
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    cursor: pointer;
+}
+
+.right img {
+    z-index: 99999;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 30px;
+    cursor: pointer;
+}
+
+/*end*/
+
+
+/*okja*/
+.ok {
+    right: 0;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+
+
+    height: 85%;
+    transition: right 1s;
+}
+
+.ok .okbox {
+    width: 550px;
+    height: 550px;
+
+}
+
+.ok .item.img0 {
+    background: url(../img/s1/goods/bag.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.ok .item.img1 {
+    background: url(../img/s1/goods/mug.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.ok .item.img2 {
+    background: url(../img/s1/goods/Shirt%20.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.ok .item.img3 {
+    background: url(../img/s1/goods/wall%20art.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+/*helminth*/
+.helminth {
+   right: 0;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+
+
+    height: 85%;
+    transition: right 1s;
+}
+
+.helminth .helminthbox {
+    width: 550px;
+    height: 550px;
+
+}
+    .helminthbox.helminthimg1 {margin: 0px auto 200px }
+    .helminthbox.helminthimg2 {margin: 0px auto 200px }
+    .helminthbox.helminthimg3 {margin: 0px auto 200px }
+    .helminthbox.helminthimg4 {margin: 0px auto 200px }
+.helminth .item.img0 {
+    background: url(../img/helminth/goods/bag.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.helminth .item.img1 {
+    background: url(../img/helminth/goods/mug.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.helminth .item.img2 {
+    background: url(../img/helminth/goods/Shirt%20.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.helminth .item.img3 {
+    background: url(../img/helminth/goods/wall%20art.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+
+/*mart*/
+.right_top_login .items .kim > .kim2 {
+width: 50%;
+    height: 100%;
+}
+.content .right_top {
+    position: fixed;
+    z-index: 9999999;
+    right: 50px;
+    top: 83%;
+    display: flex;
+    flex-direction: column;
+
+
+
+
+}
+.baskett {
+
+    position: fixed;
+        border: 2px solid #fff;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+
+          cursor: pointer;
+    transition: all 1s;
+        transform: translateX(0);
+}
+
+.moving {
+    animation-name: moving;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes moving {
+    0% {
+        transform: translateX(0px);
+    }
+    30% {
+        transform: translateX(10px);
+    }
+    60% {
+        transform: translateX(-5px);
+    }
+    90% {
+        transform: translateX(2px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+.moving2 {
+    animation-name: moving2;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes moving2 {
+    0% {
+        transform: translateX(0px);
+    }
+    30% {
+        transform: translateX(10px);
+    }
+    60% {
+        transform: translateX(-5px);
+    }
+    90% {
+        transform: translateX(2px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
+.baskett img {
+    position: relative;
+    display: inline-block;
+    top: 15px;
+ width: 40px;
+    left: 10px;
+}
+.right_top .right_top_login {
+    margin-right: 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+
+.items {
+    position: absolute;
+    width: 300px;
+    left: 130px;
+    border: 1px solid #fff;
+    background: black;
+    top: -568px;
+    /*    background-color: transparent;*/
+    height: 451px;
+border-radius: 5px 5px 0px 0px;
+    overflow: hidden;
+}
+
+
+.topmit {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #fff;
+    display: inline-block;
+    line-height: 40px;
+
+}
+
+.itemslist {
+    width: 100%;
+    
+    position: relative;
+}
+/* width */
+.items::-webkit-scrollbar {
+  width: 1px;
+    
+} 
+/* Track */
+.items::-webkit-scrollbar-track {
+  background: black; 
+}
+ 
+/* Handle */
+.items::-webkit-scrollbar-thumb {
+background-color:rgb(255,0,0);
+}
+
+
+
+
+.bflex {
+    position: absolute;
+    bottom: 68px;
+    border: 1px solid #fff;
+    width: 300px;
+    background: black;
+   left: 130px;
+ color: #fff;
+        border-radius: 0px 0px 5px 5px
+}
+
+
+
+.bottom {
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: baseline;
+
+}
+
+.buy {
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    bottom: 0;
+    margin-right: 10px;
+    width: 50px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+    background: black;
+
+}
+
+.itemxicon img {
+    position: relative;
+    left: 9px;
+    width: 15px;
+    
+    cursor: pointer;
+}
+
+.kim {
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    line-height: 20px;
+
+color: #fff;
+
+}
+
+.makittlist1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    transition: all 1s;
+    
+}
+
+.maketnum {
+    position: absolute;
+    right: 0px;
+    bottom: 9px;
+    top: 26px;
+    font-size: 10px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+input[id="buy"] {
+    outline: none;
+    box-shadow: none;
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.right_top_login .items .kim > span {
+    display: inline-block;
+    width: 30%;
+    position: relative;
+    right: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.right_top_login .items .kim > .kim2 {
+    width: 50%;
+    height: 100%;
+}
+/*marticon*/
+/*    --hoverline--*/
+.xline900 {
+
+   background-color: transparent;
+    transition: all 1s;
+    left: 0px;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin: 0 auto;
+    top: 11px;
+    cursor: pointer;
+    z-index: 100;
+background: url(../img/mart/Wchrtplus.png) no-repeat;
+    background-size: 25px 25px;
+   opacity: 1;
+    
+
+}
+
+
+
+
+
+
+.xline901 {
+    transition: all 1s;
+    left: 0px;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin: 0 auto;
+    top: 11px;
+    cursor: pointer;
+    z-index: 100;
+background: url(../img/mart/Wchrtplus.png) no-repeat;
+    background-size: 25px 25px;
+   opacity: 1;
+
+}
+
+
+
+
+
+/*info*/
+
+.blackwall:before {
+
+content: '';
+    display: block;
+position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/ok1/backbround_2.gif) no-repeat;
+    background-size: cover;
+
+    z-index: -1;}
+
+.blackwall {
+    top: 0;
+     position: absolute;
+width: 100%;
+z-index: 999;
+
+    height: 100%;
+
+}
+.submain {
+padding: 30px 0 0 0;
+margin: 0 auto;
+    width: 500px;
+    height: 500px;
+}
+.subinfo1 {
+    background: url(../img/ok1/goods/ok1.png) no-repeat;
+     width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    
+}
+
+.blackwall2:before {
+
+content: '';
+    display: block;
+position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/ok1/backbround_2.gif) no-repeat;
+    background-size: cover;
+
+    z-index: -1;}
+
+.blackwall2 {
+    bottom: 1200px;
+     position: absolute;
+width: 100%;
+    left: 0;
+z-index: 999;
+
+    height: 100vh;
+
+}
+.blackwall2  .submain {
+padding: 30px 0 0 0;
+margin: 0 auto;
+    width: 500px;
+    height: 500px;
+}
+.blackwall2  .subinfo1 {
+    background: url(../img/ok1/goods/ok2.png) no-repeat;
+     width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    
+}
+    .next img {
+    display: none;
+} .right img {
+    display: none;
+}
+}
+
+
+/* mobile 모바일 */
+@media all and (max-width: 901px) {
+  
+    .imgbox {
+    position: relative;
+    width:100%;
+    background: black;
+    height: 100%;
+
+}
+    
+/*    추가*/
+    
+   .s1 .buy10.another {
+        display: block;
+       margin: 0 auto;
+    } 
+    
+   .s1 .buy10.main {
+    display: none;
+    }
+/*추가*/
+    .blackwall.main {
+        display: none;
+    }
+     .blackwall2.main {
+        display: none;
+    }
+    .blackwall.another {
+        display: block;
+    }
+     .blackwall2.another {
+        display: block;
+    }
+    
+/*수정*/
+.s1 {
+    right: 0;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+
+
+    height: 100%;
+    transition: right 1s;
+}
+
+
+/*수정*/
+.flexbox {
+
+/*    overflow:hidden;*/
+
+    width: 100%;
+    height: 3000px;
+    position: relative;
+    margin-bottom: 300px;
+}
+
+/*추가*/
+    .s1box.s1img1 {
+      
+        margin: 0px auto 200px ;
+
+     
+    }.s1box.s1img2 {
+         margin: 0px auto 200px ;
+    }.s1box.s1img3 {
+        margin: 0px auto 200px ;
+    }.s1box.s1img4 {
+        margin: 0px auto ;
+    }
+    
+    .okbox.okimg1 {    margin: 0px auto 200px ;}
+    .okbox.okimg2 {    margin: 0px auto 200px ;}
+    .okbox.okimg3 {     margin: 0px auto 200px ;}
+    .okbox.okimg4 {    margin: 0px auto 200px ;}
+.s1 .item.img0 {
+
+    background: url(../img/ok1/goods/ok1.png) no-repeat;
+    width: 350px;
+    height: 350px;
+       margin: 0 auto;
+
+    background-size: 100% 100%;
+ 
+}
+
+.s1 .item.img1 {
+
+    background: url(../img/ok1/goods/ok2.png) no-repeat;
+    width: 350px;
+    height: 350px;
+       margin: 0 auto;
+    background-size: 100% 100%;
+}
+
+.s1 .item.img2 {
+    background: url(../img/ok1/goods/ok3%20.png) no-repeat;
+    width: 350px;
+    height: 350px;
+       margin: 0 auto;
+    background-size: 100% 100%;
+}
+
+.s1 .item.img3 {
+    background: url(../img/ok1/goods/ok4%20.png) no-repeat;
+      width: 350px;
+    height: 350px;
+       margin: 0 auto;
+    background-size: 100% 100%;
+}
+
+.textarea {
+    text-align: center;
+    margin-top: 5px;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+
+}
+
+.textarea .buy10 {
+    cursor: pointer;
+    font-size: 10px;
+    width: 40px;
+    display: inline-block;
+    margin-top: 0px;
+    border: 1px solid #fff;
+    padding: 7px;
+}
+
+/*img*/
+    
+/*수정*/
+.s1 .s1box {
+    width: 100%;
+    height: 450px;
+
+}
+
+
+/*next right button*/
+
+
+
+
+.next img {
+
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    cursor: pointer;
+}
+
+.right img {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 30px;
+    cursor: pointer;
+}
+
+/*end*/
+
+
+/*okja*/
+.ok {
+    right: 0;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+
+
+    height: 100%;
+    transition: right 1s;
+}
+
+.ok .okbox {
+    width: 100%;
+    height: 450px;
+
+}
+
+.ok .item.img0 {
+    background: url(../img/s1/goods/bag.png) no-repeat;
+    width: 350px;
+    height: 350px;
+       margin: 0 auto;
+    background-size: 100% 100%;
+}
+
+.ok .item.img1 {
+    background: url(../img/s1/goods/mug.png) no-repeat;
+    width: 350px;
+    height: 350px;
+       margin: 0 auto;
+    background-size: 100% 100%;
+}
+
+.ok .item.img2 {
+    background: url(../img/s1/goods/Shirt%20.png) no-repeat;
+      width: 350px;
+    height: 350px;
+       margin: 0 auto;
+    background-size: 100% 100%;
+}
+
+.ok .item.img3 {
+    background: url(../img/s1/goods/wall%20art.png) no-repeat;
+       width: 350px;
+    height: 350px;
+       margin: 0 auto;
+    background-size: 100% 100%;
+}
+
+/*helminth*/
+.helminth {
+   right: 0;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+
+
+    height: 100%;
+    transition: right 1s;
+}
+
+.helminth .helminthbox {
+    width: 100%;
+    height: 450px;
+
+}
+    .helminthbox.helminthimg1 {margin: 0px auto 200px }
+    .helminthbox.helminthimg2 {margin: 0px auto 200px }
+    .helminthbox.helminthimg3 {margin: 0px auto 200px }
+    .helminthbox.helminthimg4 {margin: 0px auto 200px }
+.helminth .item.img0 {
+    background: url(../img/helminth/goods/bag.png) no-repeat;
+          width: 350px;
+    height: 350px;
+       margin: 0 auto;
+    background-size: 100% 100%;
+}
+
+.helminth .item.img1 {
+    background: url(../img/helminth/goods/mug.png) no-repeat;
+     width: 350px;
+    height: 350px;
+       margin: 0 auto;
+    background-size: 100% 100%;
+}
+
+.helminth .item.img2 {
+    background: url(../img/helminth/goods/Shirt%20.png) no-repeat;
+    width: 350px;
+    height: 350px;
+       margin: 0 auto;
+    background-size: 100% 100%;
+}
+
+.helminth .item.img3 {
+    background: url(../img/helminth/goods/wall%20art.png) no-repeat;
+    width: 350px;
+    height: 350px;
+       margin: 0 auto;
+    background-size: 100% 100%;
+}
+
+
+/*mart*/
+.right_top_login .items .kim > .kim2 {
+width: 50%;
+    height: 100%;
+}
+.content .right_top {
+    position: fixed;
+    z-index: 9999999;
+    right: 50px;
+    top: 83%;
+    display: flex;
+    flex-direction: column;
+
+
+
+
+}
+.baskett {
+
+    position: fixed;
+        border: 2px solid #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+
+          cursor: pointer;
+    transition: all 1s;
+        transform: translateX(0);
+}
+
+.moving {
+    animation-name: moving;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes moving {
+    0% {
+        transform: translateX(0px);
+    }
+    30% {
+        transform: translateX(10px);
+    }
+    60% {
+        transform: translateX(-5px);
+    }
+    90% {
+        transform: translateX(2px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+.moving2 {
+    animation-name: moving2;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes moving2 {
+    0% {
+        transform: translateX(0px);
+    }
+    30% {
+        transform: translateX(10px);
+    }
+    60% {
+        transform: translateX(-5px);
+    }
+    90% {
+        transform: translateX(2px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
+.baskett img {
+    position: relative;
+    display: inline-block;
+    top: 10px;
+ width: 30px;
+    left: 8px;
+}
+.right_top .right_top_login {
+    margin-right: 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+
+.items {
+    position: absolute;
+    width: 300px;
+    left: 130px;
+    border: 1px solid #fff;
+    background: black;
+    top: -568px;
+    /*    background-color: transparent;*/
+    height: 451px;
+border-radius: 5px 5px 0px 0px;
+    overflow: hidden;
+}
+
+
+.topmit {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #fff;
+    display: inline-block;
+    line-height: 40px;
+
+}
+
+.itemslist {
+    width: 100%;
+    
+    position: relative;
+}
+/* width */
+.items::-webkit-scrollbar {
+  width: 1px;
+    
+} 
+/* Track */
+.items::-webkit-scrollbar-track {
+  background: black; 
+}
+ 
+/* Handle */
+.items::-webkit-scrollbar-thumb {
+background-color:rgb(255,0,0);
+}
+
+
+
+
+.bflex {
+    position: absolute;
+    bottom: 68px;
+    border: 1px solid #fff;
+    width: 300px;
+    background: black;
+   left: 130px;
+ color: #fff;
+        border-radius: 0px 0px 5px 5px
+}
+
+
+
+.bottom {
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: baseline;
+
+}
+
+.buy {
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    bottom: 0;
+    margin-right: 10px;
+    width: 50px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+    background: black;
+
+}
+
+.itemxicon img {
+    position: relative;
+    left: 9px;
+    width: 15px;
+    
+    cursor: pointer;
+}
+
+.kim {
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    line-height: 20px;
+
+color: #fff;
+
+}
+
+.makittlist1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    transition: all 1s;
+    
+}
+
+.maketnum {
+    position: absolute;
+    right: -4px;
+    bottom: 8px;
+    top: 17px;
+    font-size: 10px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+input[id="buy"] {
+    outline: none;
+    box-shadow: none;
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.right_top_login .items .kim > span {
+    display: inline-block;
+    width: 30%;
+    position: relative;
+    right: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.right_top_login .items .kim > .kim2 {
+    width: 50%;
+    height: 100%;
+}
+/*marticon*/
+/*    --hoverline--*/
+.xline900 {
+
+   background-color: transparent;
+    transition: all 1s;
+    left: 0px;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin: 0 auto;
+    top: 11px;
+    cursor: pointer;
+    z-index: 100;
+background: url(../img/mart/Wchrtplus.png) no-repeat;
+    background-size: 25px 25px;
+   opacity: 1;
+    
+
+}
+
+
+
+
+
+
+.xline901 {
+    transition: all 1s;
+    left: 0px;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin: 0 auto;
+    top: 11px;
+    cursor: pointer;
+    z-index: 100;
+background: url(../img/mart/Wchrtplus.png) no-repeat;
+    background-size: 25px 25px;
+   opacity: 1;
+
+}
+
+    .closeX {
+        display: block;
+        z-index: 9999;
+        
+    }
+
+
+
+/*info*/
+
+.blackwall:before {
+
+content: '';
+    display: block;
+position: absolute;
+    width: 100%;
+    height: 500px;
+    background: url(../img/ok1/backbround_2.gif) no-repeat;
+    background-size: cover;
+
+    z-index: -1;}
+
+.blackwall {
+    top: 0;
+     position: absolute;
+width: 100%;
+z-index: 999;
+
+    height: 100%;
+
+}
+.submain {
+padding: 0px;
+margin: 0 auto;
+    width: 100%;
+    height: 500px;
+}
+.subinfo1 {
+    background: url(../img/ok1/goods/ok1.png) no-repeat;
+     width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    background-size: 100% 100%;
+    
+}
+
+.blackwall2:before {
+
+content: '';
+    display: block;
+position: absolute;
+    width: 100%;
+    height: 500px;
+    background: url(../img/ok1/backbround_2.gif) no-repeat;
+    background-size: cover;
+
+    z-index: -1;}
+
+.blackwall2 {
+    bottom: 1530px;
+     position: absolute;
+width: 100%;
+    left: 0;
+z-index: 999;
+
+    height: 100vh;
+
+}
+.blackwall2  .submain {
+padding: 0px;
+margin: 0 auto;
+    width: 100%;
+    height: 450px;
+}
+.blackwall2  .subinfo1 {
+    background: url(../img/ok1/goods/ok2.png) no-repeat;
+     width: 300px;
+    height: 300px;
+    background-size: 100% 100%;
+    
+}
+    .next img {
+    display: none;
+} .right img {
+    display: none;
+}
+  
+ 
+}

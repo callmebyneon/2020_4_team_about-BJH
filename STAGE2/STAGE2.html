@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../common/img/favicon_32x32.png" type="image/x-icon"/>
+	<link rel="icon" href="../common/img/favicon_32x32.png" type="image/x-icon">
+    <title>ABOUT_______</title>
+    <link rel="stylesheet" href="../common/css/basic.css">
+    <link rel="stylesheet" href="css/stage2.css">
+    
+    <script type="text/javascript" src="../common/js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(function(){
+            $("header").load("../common/head.html");
+            $("footer").load("../common/foot.html");
+//            $(".mobile").load("../common/mobile.html");
+        });
+    </script>
+
+    <!--키 감지 & 플레이-->
+    <script type="text/javascript" src="js/play2.js"></script>
+    <script type="text/javascript" src="js/bgm.js"></script>
+    
+</head>
+
+<body>
+<header></header>
+
+<!-- 모바일 화면 -->
+<div class="mobile-index-wrap">
+    <div class="m-video"></div>
+    <p class="exception">게임을 시작하려면 브라우저 창을 키워주세요.<br>모바일에서 접속했다면 PC 환경으로 접속해주세요.</p>
+</div>
+
+<div class="container">
+    <div class="game">
+        <input type="checkbox" id="onoff" class="onoff" name="b1" onchange="myfunction(this);">
+        <label for="onoff"></label>
+
+        <!--주인공 캐릭터 Playable Character/ 152 x 120 -->
+        <img id="pc" class="okja" src="img/idle.gif">
+ 
+        <!--악당들 Villains/ 60 x 76 -->
+        <div class="villains">
+            <img src="img/villain_0_b.gif" class="vill v1">
+            <img src="img/villain_0_f.gif" class="vill v2">
+            <img src="img/villain_0_f.gif" class="vill v3">
+            <img src="img/villain_0_b.gif" class="vill v4">
+            <img src="img/villain_0_f.gif" class="vill v5">
+            <img src="img/villain_0_b.gif" class="vill v6">
+        </div>
+        <!--옥자보다 위에 보일 이미지-->
+        <img class="bottomElem max" src="img/bottomElem.png">
+        <img class="bottomElem mid" src="img/bottomElem_mid.png">
+        <img class="bottomElem min" src="img/bottomElem_min.png">
+
+        <!--메세지 박스 MESSAGE BOX-->
+        <div class="howtoplay">방향키를 눌러서<br>출구까지 이동하세요!</div>
+
+        <div class="alert start-message">
+            <span class="message">STAGE 2</span><span style="font-size: 20px;">START</span>
+            <span class="guide-message">SPACE 눌러 게임을 시작하세요.</span>
+        </div>
+        
+        <div class="alert end-message">
+            <span class="message replay">GAME OVER! TRY AGAIN!</span>
+            <span class="guide-message">F5를 눌러 게임을 처음부터 다시 시작하세요.</span>
+        </div> 
+        
+        <div class="alert clear-message">
+            <span class="message clear">GAME CLEAR!</span>
+            <span class="guide-message">버튼을 누르면 다음 스케이지로 이동합니다.</span>
+            <span class="guide-message">다시 시작하려면 F5를 눌러주세요.</span>
+            <a class="next-stage" href="../STAGE3/STAGE3.html">NEXT STAGE</a>
+        </div>
+         
+        <!--오디오 AUDIO-->
+        <audio id="keymovesound">
+           <source src="soundfx/untitled.mp3" type="audio/mp3">
+        </audio>
+
+        <audio id="start">start
+           <source src="soundfx/start.mp3" type="audio/mp3">
+        </audio>
+
+         <audio id="gameover">
+           <source src="soundfx/game_over2.mp3" type="audio/mp3">
+        </audio>   
+          
+        <audio id="success"> 
+           <source src="soundfx/success.mp3" type="audio/mp3">
+        </audio>
+    </div> 
+</div>
+
+
+<footer></footer>
+
+</body>
+
+</html>
