@@ -4,6 +4,14 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'NanumSquare';
+    src: url('NanumSquareR.woff2') format('woff2'),
+         url('NanumSquareR.woff2') format('woff'),
+         url('NanumSquareR.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @charset "UTF-8"
     

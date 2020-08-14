@@ -11,10 +11,13 @@
     <link rel="stylesheet" href="../common/css/basic.css">
   	<link rel="stylesheet" href="css/CHARACTHER.css">
    	<link rel="stylesheet" href="css/animate.css">
+   	<link rel="stylesheet" href="css/aos.css">
+   	
     <script type="text/javascript" src="../common/js/jquery-3.4.1.min.js"></script>
     <script src="js/jquery.easing.1.3.min.js"></script>
     <script src="js/CHARACTHER.js"></script>
 	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script type="text/javascript" src="js/aos.js"></script>
     <title>ABOUT_______ </title>
     <script>
         $(function(){
@@ -29,17 +32,13 @@
    
 <header></header>
 
-<!--
-   	<div id="container">
-		<div id="log">0</div>
-	</div>
--->
-        <!-- container 시작(공통)--> 
-		<div class="container wow fadeInUp">
-			<h3 class="page-tit">CHARACTHER</h3>
-			<h4 class="page-sub">등장인물 캐릭터</h4>
-        </div>
-        <!-- container 끝(공통)--> 
+<!-- content 시작(공통)--> 
+<div class="content wow fadeInUp">
+	<h3 class="page-tit">CHARACTHER</h3>
+	<h4 class="page-sub">등장인물 캐릭터</h4>
+</div>
+<!-- content 끝(공통)--> 
+          
            
 <!-----content 시작----->
 <div id="content">
@@ -48,7 +47,11 @@
 	<!--Snowpiercer 시작-->
 	<div class="Snowpiercer hideme">
         <div class="Snow-txt TEXT_ALL">
-			<h1 class="S-txt callout-title ">설국열차</h1>
+			<h1 class="S-txt callout-title"
+				 data-aos="fade-up"
+				 data-aos-easing="linear"
+				 data-aos-delay="800"
+				 data-aos-duration="500">설국열차</h1>
 		</div>
 		
 		<div class="Snow-img IMG_ALL">
@@ -77,7 +80,7 @@
                     <ul>
 						<li><h1>NAMGUNGMINSU<span class="text_name">송강호</span></h1></li>
                         <li>
-                        	<span class="text_li">커티스 함께 STAGE1을 탈출하자.</span>
+                        	<span class="text_li">커티스와 함께 STAGE1을 탈출하자.</span>
                         </li>
                         <li>
 							<span>요나의 아버지 남궁민수. 커티스가 반란을 일으켜서 4개의 문을 통과한 후 부터는 맨 앞칸까지 문을 열어주는 역할을 한다. 설국열차 안에서의 생태계를 잘 이해하고 있는 사람이지만 열차 내부의 산업 폐기물로 만든 일종의 마약 '크로놀'에 쩔어 있는 약쟁이보안설계자이다. 하지만 이런 모습과 달리 뛰어난 실력을 가진 보안설계사로 열차 내의 모든 보안 시스템은 그의 작품이다.</span>
@@ -93,7 +96,7 @@
                     <ul>
 						<li><h1>YONA<span class="text_name">고아성</span></h1></li>
                         <li>
-                        	<span class="text_li">커티스 함께 STAGE1을 탈출하자.</span>
+                        	<span class="text_li">커티스와 함께 STAGE1을 탈출하자.</span>
                         </li>
                         <li>
 							<span>열차에서 태어난 소녀, 아버지인 남궁 민수처럼 크로놀 중독자이다. 트레인 베이비 (기차 안에서 태어나 땅을 밟아본 적이 없는 세대)의 특징인 뛰어난 청각으로 문 너머의 공간의 상황을 알 수 있다. 아버지보다 영어를 잘해서 통역기 없이 커티스랑 영어로 이야기 나누곤 한다. 유일한 보호자인 아버지와 꼬리칸의 커티스가 열차 폭발시 티미와 자신을 보호하고 죽은 뒤 유일한 생존자가 되어 티미와 같이 열차를 나가 어디론가 떠난다.</span>
@@ -107,7 +110,10 @@
  	<!--------OKJA 시작------->   
 	<div class="OKJA hideme">
         <div class="OKJA-txt TEXT_ALL">
-			<h1 class="O-txt callout-title">옥자</h1>
+			<h1 class="O-txt callout-title"  
+			 	data-aos="fade-up"
+				data-aos-easing="linear"
+				data-aos-duration="1500">옥자</h1>
 		</div>
 		<div class="OKJA-img IMG_ALL">
             <div id="hippo">
@@ -148,7 +154,10 @@
  	<!-----PARASITE 시작----->   
 	<div class="PARASITE hideme">
         <div class="PARA-txt TEXT_ALL">
-			<h1 class="P-txt callout-title">기생충</h1>
+			<h1 class="P-txt callout-title" 
+				data-aos="fade-up"
+				data-aos-easing="linear"
+				data-aos-duration="1500">기생충</h1>
 		</div>
 		<div class="PARA-img IMG_ALL">
             <div id="songkangho">
@@ -162,7 +171,7 @@
                         	<span class="text_li">STAGE3의 마지막 인물 '김기택' 코인을 먹으며 지상을 향해 탈출하자.</span>
                         </li>
                         <li>
-							<span class="text_li_li">좋은 능력을 가졌으나 운이 없어 실패만 주구장창 겪어왔고, 사기 행각을 벌였음에도 불구하고 피해자를 걱정한다. 근세에게는 계획 없음을 나무랐으나 아들 기우에게는 도리어 계획같은건 필요 없다고 말하는 것에서 그의 내면에 존재하는 이중잣대와 양면성을 볼 수 있다. 주변에서 한 번은 볼 법한 매우 현실적이고 세속적인 인물. 봉준호 감독이 언급했던, 선인도 악인도 아닌 자에 가장 부합하는 인물이라고 할 수 있다. 사실상 이 영화의 최종보스지만 빌런은 아닌 셈이다.</span>    
+							<span class="text_li_li">좋은 능력을 가졌으나 운이 없어 실패만 주구장창 겪어왔고, 사기 행각을 벌였음에도 불구하고 피해자를 걱정한다. 근세에게는 계획 없음을 나무랐으나 아들에게는 도리어 계획같은건 필요 없다고 말하는 것에서 그의 내면의 이중잣대와 양면성을 볼 수 있다. 주변에서 한 번은 볼 법한 매우 현실적이고 세속적인 인물. 선인도 악인도 아닌 자에 가장 부합하는 인물이라고 할 수 있다. 사실상 이 영화의 최종보스지만 빌런은 아닌 셈이다.</span>    
                    		</li>                       
                     </ul>
                 </div>
