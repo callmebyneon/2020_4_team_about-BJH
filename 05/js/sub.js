@@ -174,55 +174,55 @@ $(function () {
     // 마우스 터치 슬라이드
 
     $(function () {
-        $(".flexbox").swipe({
-            swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
-                if (direction == "left") {
-                    $(".s1,.ok,.helminth").css('right', '1500px');
-                    $(".next").css('display', 'block');
-                    $(".right").css('display', 'none');
-                    $('.blackwall').animate({
-                        'bottom': '-1020'
-                    });
-                    $('.blackwall2').animate({
-                        'bottom': '-1020'
-                    });
-
-                } else if (direction == "right") {
-                    $(".s1,.ok,.helminth").css('right', '0px');
-                    $(".next").css('display', 'none');
-                    $(".right").css('display', 'block');
-                    threshold: 0
-                    $('.blackwall').animate({
-                        'bottom': '-1020' 
-                    });
-                    $('.blackwall2').animate({
-                        'bottom': '-1020'
-                    });
-                }
-
-            },
-        });
+//        $(".flexbox").swipe({
+//            swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
+//                if (direction == "left") {
+//                    $(".s1,.ok,.helminth").css('right', '1500px');
+//                    $(".next").css('display', 'block');
+//                    $(".right").css('display', 'none');
+//                    $('.blackwall').animate({
+//                        'bottom': '-1020'
+//                    });
+//                    $('.blackwall2').animate({
+//                        'bottom': '-1020'
+//                    });
+//
+//                } else if (direction == "right") {
+//                    $(".s1,.ok,.helminth").css('right', '0px');
+//                    $(".next").css('display', 'none');
+//                    $(".right").css('display', 'block');
+//                    threshold: 0
+//                    $('.blackwall').animate({
+//                        'bottom': '-1020' 
+//                    });
+//                    $('.blackwall2').animate({
+//                        'bottom': '-1020'
+//                    });
+//                }
+//
+//            },
+//        });
         //end 
 
         // resize
 
 
-        $(window).resize(function () {
-            if ($(window).width() > 1001) {
-                      $(".flexbox").swipe({
-            swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
-                if (direction == "left") {
-                $(".s1,.ok,.helminth").css('right', '0px');
-                    
-                }else if (direction == "right") {
-              $(".s1,.ok,.helminth").css('right', '0px');
-                } 
-                
-            }
-        }); 
-
-            } 
-        });
+//        $(window).resize(function () {
+//            if ($(window).width() > 1001) {
+//                      $(".flexbox").swipe({
+//            swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
+//                if (direction == "left") {
+//                $(".s1,.ok,.helminth").css('right', '0px');
+//                    
+//                }else if (direction == "right") {
+//              $(".s1,.ok,.helminth").css('right', '0px');
+//                } 
+//                
+//            }
+//        }); 
+//
+//            } 
+//        });
 
 
 
