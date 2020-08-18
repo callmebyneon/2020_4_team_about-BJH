@@ -371,8 +371,7 @@ border: 2px solid #fff; margin-right: 10px; font-size: 20px; padding-top: 36px; 
 
 /*mobile menu*/
     .box_inner {width: 100%;}
-    header {height: 90px; text-align: center; z-index: 200;
-    background: rgba(0,0,0,0.5);}
+    header {height: 90px; text-align: center; z-index: 200;}
     header.on {background: #31353d;}
     header .header_area h1 {float: none; width: 100%; height: 50px; text-align: center; padding: 35px 0 0;}
     header .header_area h1 a {display: inline-block;
