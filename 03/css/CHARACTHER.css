@@ -29,7 +29,7 @@
 	color: #777;
 }
 
-ul, li 
+#content ul, #content li 
 {
 	list-style: none;
 	line-height: 35px;		/*줄간격 조절 : 행간*/
@@ -734,7 +734,7 @@ ul, li
 			color: #777;
 		}
 
-		ul, li 
+		#content ul, #content li 
 		{
 			list-style: none;
 			line-height: 28px;		/*줄간격 조절 : 행간*/
@@ -886,7 +886,7 @@ ul, li
 			color: #777;
 		}
 
-		ul, li 
+		#content ul, #content li 
 		{
 			list-style: none;
 			line-height: 35px;		/*줄간격 조절 : 행간*/
@@ -1053,7 +1053,7 @@ ul, li
 
 @media all and (min-width: 500px) and (max-width: 901px){
 
-ul, li {
+#content ul, #content li {
 	list-style: none;
 	line-height: 34px;		/*줄간격 조절 : 행간*/
 	letter-spacing:0.1px;	/*글자사이간격 : 자간*/
@@ -1379,7 +1379,7 @@ ul, li {
 /*---------------------------------------------------------------------------------------------------*/
 @media all and (min-width: 376px) and (max-width: 499px){
 	
-ul, li {
+#content ul, #content li {
 	list-style: none;
 	line-height: 34px;		/*줄간격 조절 : 행간*/
 	letter-spacing:0.1px;	/*글자사이간격 : 자간*/
@@ -1704,7 +1704,7 @@ ul, li {
 /*---------------------------------------------------------------------------------------------------*/
 @media all  and (min-width: 321px) and (max-width: 375px){
 	
-ul, li {
+#content ul, #content li {
 	list-style: none;
 	line-height: 34px;		/*줄간격 조절 : 행간*/
 	letter-spacing:0.1px;	/*글자사이간격 : 자간*/
@@ -2030,7 +2030,7 @@ ul, li {
 
 @media all and (max-width: 320px){
 	
-ul, li {
+#content ul, #content li {
 	list-style: none;
 	line-height: 34px;		/*줄간격 조절 : 행간*/
 	letter-spacing:0.1px;	/*글자사이간격 : 자간*/
