@@ -18,8 +18,8 @@ var y_on = 0;                       //세로방향 키보드 눌림 감지
 
 var br_width = $(".game").innerWidth();     //게임 창 가로크기
 var br_height = $(".game").innerHeight();   //게임 창 세로크기
-var pc_width = pc.innerWidth();             //주인공 캐릭터 가로크기
-var pc_height = pc.innerHeight();           //주인공 캐릭터 세로크기
+var pc_width = 152;             //주인공 캐릭터 가로크기
+var pc_height = 120;            //주인공 캐릭터 세로크기
 /* // 변수 저장 */
 
 
@@ -85,13 +85,10 @@ function keyx_move() {
     } else if(savex_key == 39){
         left_px += move_d;
         
-        /**GAME CLEAR */
-        if(left_px == br_width - pc_width - 10){
-            pc.attr("src", "img/hurt.gif");
-            document.getElementById('success').play();
-            $('.clear-message').show();
-//            alert('GAME CLEAR');
-        }
+        /*if(left_px == br_width - pc_width - 10){
+            game_clear();
+            alert('GAME CLEAR');
+        }*/
         
         if(left_px > br_width - pc_width){
             left_px = br_width - pc_width;
@@ -121,7 +118,6 @@ function keyy_move(){
     pc.css('top', top_px);
 
 }
-    
 
 
 // 적 오브젝트 움직임
@@ -177,15 +173,18 @@ function vill_init2(){
                 
             }
         }
+        
+        /**클리어 판정 GAME CLEAR */
+        if (left_px >= br_width - pc_width - 10) {
+            game_clear();
+            clearTimeout(play_time);
+        }
     }, 10);
 }
     
 function game_over() {
    $(document).off("keydown");
      move_d = 0;  
-//    clearTimeout(play_time);
-//    clearInterval(movex_time);
-//    clearInterval(movey_time);
     x_on=1;
     y_on=1;
     
@@ -193,6 +192,13 @@ function game_over() {
     pc.attr("src", "img/gameover.gif");
     $('.end-message').show();
     document.getElementById('gameover').play();
+}
+    
+function game_clear() {
+    villain.stop();
+    pc.attr("src", "img/hurt.gif");
+    document.getElementById('success').play();
+    $('.clear-message').show();
 }
 
 $(document).on({
