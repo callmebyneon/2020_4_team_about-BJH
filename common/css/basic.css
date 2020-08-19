@@ -128,7 +128,7 @@ input.sub {
     font-size: 14px;
     width: 100px;
     height: 2.2em;
-    background: black;
+    background-color: #000;
     border: 1px solid white;
     border-radius: 5px;
     line-height: 2.2;
@@ -216,7 +216,7 @@ input.sub {
     width: 150px;
     height: 2.5em;
     padding: 12px;
-    background: black;
+    background-color: #000;
     border: 1px solid white;
     border-radius: 5px;
     margin: 20px auto 0;
