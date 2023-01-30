@@ -1,16 +1,16 @@
-ABOUT__봉준호
-=========
+---
+duration: ''
+name: 'ABOUT__봉준호'
+description: ''
+feature: ''
+---
 
-# 📌 About this Portfolio
 
-### 👉 [웹 페이지 보러가기](https://user809-git.github.io/portfolioA/index.html)
 ### 간단 설명
 - 자바스크립트(+ 제이쿼리)를 이용하여 어느정도의 게임을 만들 수 있을까?에 대한 호기심
 - 메인 페이지의 게임을 플레이 할 수 있는 것을 1차 목표로 함
 - 서브 페이지는 관련된 내용들을 소개하는 페이지와 가상의 브랜드의 커뮤니티 페이지, 파생 상품들
 - ** 전체 제작 기간 (6~7주) + 수정 사항 업데이트
-
-#### *자세한 팀원들의 역할은 [About페이지에서](https://user809-git.github.io/portfolioA/06/aboutus.html) 👈*
 
 ### 참고 페이지
 - [(게임 참고 페이지)](http://izerocom2.cafe24.com/game.html)
@@ -239,7 +239,3 @@ function onkey_press(event) {
 }
 ```
 
-***
-
-## 👈 [이전 프로젝트 보기](https://github.com/user809-git/portfolio2)
-## 👋 [다음 프로젝트로 넘어가기](https://github.com/user809-git/portfolio3)
