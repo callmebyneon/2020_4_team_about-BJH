@@ -194,6 +194,10 @@ $(function () {
         pc.attr("src", "img/hurt.gif");
         document.getElementById('success').play();
         $('.clear-message').show();
+        
+        document.addEventListener("keydown", function(e) {
+            console.log('press:', e, e.keyCode)
+        });
     }
 
     $(document).on({
