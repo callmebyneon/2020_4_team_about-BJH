@@ -83,7 +83,7 @@ _메인 게임 스테이지_
 
 ## (직접) 작성한 코드들 리뷰
 
-### 📁 STAGE2 - ([STAGE2 바로가기](https://user809-git.github.io/portfolioA/STAGE2/STAGE2.html))
+### 📁 STAGE2
 - **화면 가로사이즈 901px이상일 때만 게임 플레이 가능*
 - jQuery 사용
 - 고민들
